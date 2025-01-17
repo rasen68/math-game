@@ -4,14 +4,7 @@ import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 from pygame import mixer
 
-def multQuestionAnswer(i, queue, file):
-    i = list(i)
-    question = f"What's {i[0]} times {i[1]}?"
-    answer = i[0] * i[1]
-
-    start = time.time()
-    print(question)
-    file.write(question + "\n")
+def inputLoop(question, answer, queue, file):
     while True:
         userAnswer = input()
         if userAnswer == str(answer):
@@ -29,11 +22,24 @@ def multQuestionAnswer(i, queue, file):
             print("Not quite! Try again")
             print()
             print(question)
+
+def multQuestionAnswer(i, queue, file):
+    i = list(i)
+    question = f"What's {i[0]} times {i[1]}?"
+    answer = i[0] * i[1]
+
+    start = time.time()
+    print(question)
+    file.write(question + "\n")
+
+    if inputLoop(question, answer, queue, file) == 0:
+        return 0
+    
     end = time.time()
     print("Good job!")
     print()
     mixer.init()
-    mixer.music.load("C:\\Users\\Rasen\\Downloads\\Untitled-score.ogg")
+    mixer.music.load(os.path.dirname(os.path.abspath(__file__)) + "\\Untitled-score.ogg")
     mixer.music.play()
 
     file.write(str(round(end - start, 2)) + "\n")
@@ -127,6 +133,11 @@ def drillTimesTablesHard(nums, file):
     drillMult(file, nums, list, extras)
 
 if __name__ == "__main__":
-    file = open("C:\\Users\\Rasen\\Downloads\\program\\aldan files\\" + input(), "a")
-    drillTimesTables([9], file)
+    student1 = input("Student 1? ")
+    student2 = input("Student 2? ")
+    tables = input("Times tables? ").split()
+    tables = [int(i) for i in tables]
+    file = open(os.getcwd() + "\\tutoring-files\\" 
+ + student1 + student2 + ".txt", "a")
+    drillTimesTables(tables, file)
     
