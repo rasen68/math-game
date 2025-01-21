@@ -23,9 +23,9 @@ def inputLoop(question, answer, queue, file):
             print()
             print(question)
 
-def multQuestionAnswer(i, queue, file):
+def multQuestionAnswer(i, queue, student, file):
     i = list(i)
-    question = f"What's {i[0]} times {i[1]}?"
+    question = f"{student}: What's {i[0]} times {i[1]}?"
     answer = i[0] * i[1]
 
     start = time.time()
@@ -57,36 +57,41 @@ def enqueue(queue, question):
     else:
         queue.insert(index, question)
 
-def pretest(allNums, file):
+def pretest(student1, student2, allNums, file):
     shuffled = [i for i in allNums]
     random.shuffle(shuffled)
     last3 = [(0, 0), (0, 0), (0, 0)]
     queue = []
+    whichstudent = student1
 
     for i in shuffled:
-        t = multQuestionAnswer(i, [], file)
+        t = multQuestionAnswer(i, [], whichstudent, file)
         #print(f"{t:.2f}")
         enqueue(queue, (t, i)) 
         last3.pop(0)
         last3.append(i)
-    return queue, last3    
+        whichstudent = student1 if whichstudent==student2 else student2
+    return queue, last3 
 
-def makeQuestions(allNums, file):
-    queue, last3 = pretest(allNums, file)
+def makeQuestions(allNums, student1, student2, file):
+    queue1, last3 = pretest(student1, student2, allNums, file)
+    queue2 = [i for i in queue1]
+    whichstudent = student1 if len(allNums)%2==0 else student2
+    whichqueue = queue1 if len(allNums)%2==0 else queue2
     
     while True:
         # find question
         for i in range(3):
-            if queue[i][1] not in last3:
-                question = queue.pop(i)
+            if queue1[i][1] not in last3:
+                question = whichqueue.pop(i)
                 break
         else:
-            question = queue.pop(3)
+            question = whichqueue.pop(3)
 
         # process question
         last3.pop(0)
         last3.append(question[1])
-        t2 = multQuestionAnswer(question[1], queue, file) 
+        t2 = multQuestionAnswer(question[1], whichqueue, whichstudent, file) 
         if t2 == 0:
             break
         elif (t2 * 2 + question[0]) / 3 > 30:
@@ -94,16 +99,20 @@ def makeQuestions(allNums, file):
         else:
             average = (t2 * 2 + question[0]) / 3
         question = (average, question[1])
-        enqueue(queue, question)
+        enqueue(whichqueue, question)
 
         # +1 second to random question in queue
-        rand = queue.pop(random.randint(1, len(queue) - 1))
+        rand = whichqueue.pop(random.randint(1, len(whichqueue) - 1))
         rand = (rand[0] + 1, rand[1])
-        enqueue(queue, rand)
-    file.write(str(queue))
+        enqueue(whichqueue, rand)
+        whichstudent = student1 if whichstudent==student2 else student2
+        whichqueue = queue1 if whichqueue==queue2 else queue2
+
+    file.write(student1 + ": " + str(queue1))
+    file.write(student2 + ": " + str(queue2))
     file.close()
                      
-def drillMult(file, num1s, num2s = None, extras = None):
+def drillMult(student1, student2, file, num1s, num2s = None, extras = None):
     if not num2s:
         num2s = num1s
     allNums = []
@@ -115,29 +124,28 @@ def drillMult(file, num1s, num2s = None, extras = None):
         for extra in extras:
             allNums.append(extra)
     
-    makeQuestions(allNums, file)
+    makeQuestions(allNums, student1, student2, file)
 
-def drillTimesTables(nums, file):
-    list = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    drillMult(file, nums, list)
+def drillTimesTables(nums, student1, student2, file):
+    lis = list(range(2, 13))
+    drillMult(student1, student2, file, nums, lis)
 
-def drillTimesTablesHard(nums, file):
+def drillTimesTablesHard(nums, student1, student2, file):
     extras = []
-    list = [3, 4, 6, 7, 8, 9, 12]
+    lis = [3, 4, 6, 7, 8, 9, 12]
     if 12 in nums:
         extras.append([12, 10])
         extras.append([12, 11])
     if 11 in nums:
         extras.append([11, 10])
         extras.append([11, 11])
-    drillMult(file, nums, list, extras)
+    drillMult(student1, student2, file, nums, lis, extras)
 
 if __name__ == "__main__":
     student1 = input("Student 1? ")
     student2 = input("Student 2? ")
     tables = input("Times tables? ").split()
     tables = [int(i) for i in tables]
-    file = open(os.getcwd() + "\\tutoring-files\\" 
- + student1 + student2 + ".txt", "a")
-    drillTimesTables(tables, file)
+    file = open(os.getcwd() + "\\tutoring-files\\" + student1 + student2 + ".txt", "a")
+    drillTimesTables(tables, student1, student2, file)
     
