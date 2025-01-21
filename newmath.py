@@ -82,7 +82,7 @@ def makeQuestions(allNums, student1, student2, file):
     while True:
         # find question
         for i in range(3):
-            if queue1[i][1] not in last3:
+            if whichqueue[i][1] not in last3:
                 question = whichqueue.pop(i)
                 break
         else:
