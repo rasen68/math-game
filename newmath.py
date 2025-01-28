@@ -60,7 +60,7 @@ def enqueue(queue, question):
 def pretest(student1, student2, allNums, file):
     shuffled = [i for i in allNums]
     random.shuffle(shuffled)
-    last3 = [(0, 0), (0, 0), (0, 0)]
+    last4 = [(0, 0), (0, 0), (0, 0), (0, 0)]
     queue = []
     whichstudent = student1
 
@@ -68,10 +68,10 @@ def pretest(student1, student2, allNums, file):
         t = multQuestionAnswer(i, [], whichstudent, file)
         #print(f"{t:.2f}")
         enqueue(queue, (t, i)) 
-        last3.pop(0)
-        last3.append(i)
+        last4.pop(0)
+        last4.append(i)
         whichstudent = student1 if whichstudent==student2 else student2
-    return queue, last3 
+    return queue, last4 
 
 def makeQuestions(allNums, student1, student2, file):
     queue1, last3 = pretest(student1, student2, allNums, file)
@@ -108,7 +108,7 @@ def makeQuestions(allNums, student1, student2, file):
         whichstudent = student1 if whichstudent==student2 else student2
         whichqueue = queue1 if whichqueue==queue2 else queue2
 
-    file.write(student1 + ": " + str(queue1))
+    file.write(student1 + ": " + str(queue1) + "\n")
     file.write(student2 + ": " + str(queue2))
     file.close()
                      
