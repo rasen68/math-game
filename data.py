@@ -49,10 +49,7 @@ for filename in os.listdir(directory):
                time = 30
 
             if (num1, num2) not in times:
-                if (num2, num1) in times:
-                    times[(num2, num1)].append(time)
-                else:
-                    times[(num1, num2)] = [time]
+                times[(num1, num2)] = [time]
             else:
                 times[(num1, num2)].append(time)
         i += 1
@@ -60,16 +57,14 @@ for filename in os.listdir(directory):
 for thing in times:
     times[thing] = round(np.mean(times[thing]), 2)
 
-heatmap = np.zeros((13, 13))
+heatmap = np.zeros((11, 11))
 
 for thing in times:
-    heatmap[thing[0]][thing[1]] = times[thing]
-    heatmap[thing[1]][thing[0]] = times[thing]
-
+    heatmap[thing[0] - 2][thing[1] - 2] = times[thing]
 
 # From: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
-nums1 = [str(i) for i in range(13)]
-nums2 = [str(i) for i in range(13)]
+nums1 = [str(i+2) for i in range(11)]
+nums2 = [str(i+2) for i in range(11)]
 
 fig, ax = plt.subplots()
 im = ax.imshow(heatmap, cmap="OrRd")
