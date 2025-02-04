@@ -60,7 +60,7 @@ def enqueue(queue, question):
 def pretest(student1, student2, allNums, file):
     shuffled = [i for i in allNums]
     random.shuffle(shuffled)
-    last4 = [(0, 0), (0, 0), (0, 0), (0, 0)]
+    last2 = [(0, 0), (0, 0)]
     queue = []
     whichstudent = student1
 
@@ -68,13 +68,13 @@ def pretest(student1, student2, allNums, file):
         t = multQuestionAnswer(i, [], whichstudent, file)
         #print(f"{t:.2f}")
         enqueue(queue, (t, i)) 
-        last4.pop(0)
-        last4.append(i)
+        last2.pop(0)
+        last2.append(i)
         whichstudent = student1 if whichstudent==student2 else student2
-    return queue, last4 
+    return queue, last2 
 
 def makeQuestions(allNums, student1, student2, file):
-    queue1, last3 = pretest(student1, student2, allNums, file)
+    queue1, last2 = pretest(student1, student2, allNums, file)
     queue2 = [i for i in queue1]
     whichstudent = student1 if len(allNums)%2==0 else student2
     whichqueue = queue1 if len(allNums)%2==0 else queue2
@@ -82,15 +82,15 @@ def makeQuestions(allNums, student1, student2, file):
     while True:
         # find question
         for i in range(3):
-            if whichqueue[i][1] not in last3:
+            if whichqueue[i][1] not in last2:
                 question = whichqueue.pop(i)
                 break
         else:
             question = whichqueue.pop(3)
 
         # process question
-        last3.pop(0)
-        last3.append(question[1])
+        last2.pop(0)
+        last2.append(question[1])
         t2 = multQuestionAnswer(question[1], whichqueue, whichstudent, file) 
         if t2 == 0:
             break
@@ -101,10 +101,14 @@ def makeQuestions(allNums, student1, student2, file):
         question = (average, question[1])
         enqueue(whichqueue, question)
 
-        # +1 second to random question in queue
+        # +1 second to random question in queue and last question in queue
         rand = whichqueue.pop(random.randint(1, len(whichqueue) - 1))
         rand = (rand[0] + 1, rand[1])
         enqueue(whichqueue, rand)
+        last = whichqueue.pop(-1)
+        last = (last[0] + 1, last[1])
+        enqueue(whichqueue, last)
+
         whichstudent = student1 if whichstudent==student2 else student2
         whichqueue = queue1 if whichqueue==queue2 else queue2
 

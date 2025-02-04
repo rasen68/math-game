@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import os
 
@@ -28,13 +27,13 @@ for filename in os.listdir(directory):
                 num2 = int(line[num2loc])
             else:
                 num2 = int(line[num2loc + 1]) + 10
-            
+                        
             j = i + 1
             answerExists = True
-            for line in lines[i+1:]:
-                if "times" in line:
+            for newLine in lines[i+1:]:
+                if "times" in newLine:
                     break
-                if "[" in line: 
+                if "[" in newLine: 
                     answerExists = False
                     break
                 j += 1
