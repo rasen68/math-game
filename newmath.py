@@ -3,153 +3,171 @@ import time
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 from pygame import mixer
+from heap import maxHeap, Node
+from typing import List, Tuple, TextIO
 
-def inputLoop(question, answer, queue, file):
+def inputLoop(question, answer, file):
+    start = time.time()
     while True:
         userAnswer = input()
         if userAnswer == str(answer):
             file.write(userAnswer + "\n")
-            break
-        elif userAnswer == "print":
-            print(queue)
-            continue
-        elif userAnswer == "":
-            continue
+            return time.time() - start
         elif userAnswer == "end":
             return 0
+        elif userAnswer == "":
+            continue
+        elif userAnswer == "q":
+            return time.time() - start
+        elif userAnswer == "unpause":
+            start = time.time()
         else:
             file.write(userAnswer + "\n")
             print("Not quite! Try again")
             print()
             print(question)
 
-def multQuestionAnswer(i, queue, student, file):
-    i = list(i)
-    question = f"{student}: What's {i[0]} times {i[1]}?"
-    answer = i[0] * i[1]
+def questionAnswer(i: Node, operation: str, student: str, file: TextIO):
+    first = i.data[0]
+    second = i.data[1]
+    question = f"{student}: What's {first} {operation} {second}?"
+    answer = first * second if operation == "times" else first - second
 
-    start = time.time()
     print(question)
     file.write(question + "\n")
 
-    if inputLoop(question, answer, queue, file) == 0:
+    time = inputLoop(question, answer, file)
+    if time == 0:
         return 0
-    
-    end = time.time()
+
     print("Good job!")
     print()
     mixer.init()
     mixer.music.load(os.path.dirname(os.path.abspath(__file__)) + "\\Untitled-score.ogg")
     mixer.music.play()
 
-    file.write(str(round(end - start, 2)) + "\n")
-    return end - start
+    file.write(str(round(time, 2)) + "\n")
+    return time
 
-def enqueue(queue, question):
-    question = (round(question[0], 2), question[1])
-    index = 0
-    while index < len(queue):
-        if queue[index][0] < question[0]:
-            queue.insert(index, question)
-            break
-        else:
-            index += 1
-    else:
-        queue.insert(index, question)
-
-def pretest(student1, student2, allNums, file):
+def pretestMult(student1: str, student2: str, allNums: List[Node], file: TextIO):
     shuffled = [i for i in allNums]
     random.shuffle(shuffled)
     last2 = [(0, 0), (0, 0)]
-    queue = []
-    whichstudent = student1
+    arr = []
+    whichStudent = student1
 
     for i in shuffled:
-        t = multQuestionAnswer(i, [], whichstudent, file)
+        t = questionAnswer(i, "times", whichStudent, file)
         #print(f"{t:.2f}")
-        enqueue(queue, (t, i)) 
+        arr.append(Node(t, i.data))
         last2.pop(0)
         last2.append(i)
-        whichstudent = student1 if whichstudent==student2 else student2
-    return queue, last2 
+        whichStudent = student1 if whichStudent==student2 else student2
 
-def makeQuestions(allNums, student1, student2, file):
-    queue1, last2 = pretest(student1, student2, allNums, file)
-    queue2 = [i for i in queue1]
-    whichstudent = student1 if len(allNums)%2==0 else student2
-    whichqueue = queue1 if len(allNums)%2==0 else queue2
+    heap = maxHeap(arr)
+    return heap, last2 
+
+def drill(allNums: List[Node], operation: str, student1: str, student2: str, file: TextIO):
+    if operation == "times":
+        heap1, last2 = pretestMult(student1, student2, allNums, file)
+    #else:
+       # queue1, last2 = pretestSub(student1, student2, )
+    
+    dummy = Node(0, (0, 0))
+    heap2 = maxHeap([dummy]) # heap initialisation requires nonempty array
+    heap2.extractMax()
+    heap2.array = [i for i in heap1.array]
+
+    whichStudent = student1 if len(allNums)%2==0 else student2
+    whichHeap = heap1 if len(allNums)%2==0 else heap2
     
     while True:
         # find question
-        for i in range(3):
-            if whichqueue[i][1] not in last2:
-                question = whichqueue.pop(i)
-                break
+        if whichHeap.peekMax().data not in last2:
+            question = whichHeap.extractMax()
+        elif whichHeap.peekSecondMax().data not in last2:
+            question = whichHeap.extractSecondMax()
         else:
-            question = whichqueue.pop(3)
+            question = whichHeap.extractThirdMax()
 
         # process question
         last2.pop(0)
-        last2.append(question[1])
-        t2 = multQuestionAnswer(question[1], whichqueue, whichstudent, file) 
+        last2.append(question.data)
+
+        t2 = questionAnswer(question, operation, whichStudent, file) 
         if t2 == 0:
             break
-        elif (t2 * 2 + question[0]) / 3 > 30:
+        
+        elif (t2 * 2 + question.priority) / 3 > 30:
             average = 30
         else:
-            average = (t2 * 2 + question[0]) / 3
-        question = (average, question[1])
-        enqueue(whichqueue, question)
+            average = (t2 * 2 + question.priority) / 3
+        question = Node(average, question.data)
 
-        # +1 second to random question in queue and last question in queue
-        rand = whichqueue.pop(random.randint(1, len(whichqueue) - 1))
-        rand = (rand[0] + 1, rand[1])
-        enqueue(whichqueue, rand)
-        last = whichqueue.pop(-1)
-        last = (last[0] + 1, last[1])
-        enqueue(whichqueue, last)
+        whichHeap.insert(question)
 
-        whichstudent = student1 if whichstudent==student2 else student2
-        whichqueue = queue1 if whichqueue==queue2 else queue2
+        # + 1.5 seconds to fastest question
+        last = whichHeap.size - 1
+        whichHeap.update(last, whichHeap.array[last].priority + 1.5)
 
-    file.write(student1 + ": " + str(queue1) + "\n")
-    file.write(student2 + ": " + str(queue2))
+        whichStudent = student1 if whichStudent==student2 else student2
+        whichHeap = heap1 if whichHeap==heap2 else heap2
+
+    file.write(student1 + ": " + str(heap1) + "\n")
+    file.write(student2 + ": " + str(heap2))
     file.close()
                      
-def drillMult(student1, student2, file, num1s, num2s = None, extras = None):
+def makeQuestions(num1s: List[int], num2s: List[int] = None, extras: List[Tuple[int, int]] = None) -> List[Node]:
     if not num2s:
         num2s = num1s
     allNums = []
+
     for num1 in num1s:
         for num2 in num2s:
-            if (num2, num1) not in allNums:
-                allNums.append((num1, num2))
+            node = Node(0, (num1, num2))
+            allNums.append(node)
+    
     if extras:
         for extra in extras:
-            allNums.append(extra)
+            node = Node(0, extra)
+            allNums.append(node)
     
-    makeQuestions(allNums, student1, student2, file)
-
-def drillTimesTables(nums, student1, student2, file):
+    return allNums
+    
+def makeTimesTables(nums) -> List[Node]:
     lis = list(range(2, 13))
-    drillMult(student1, student2, file, nums, lis)
+    return makeQuestions(nums, lis)
 
-def drillTimesTablesHard(nums, student1, student2, file):
+def makeTimesTablesHard(nums) -> List[Node]:
     extras = []
     lis = [3, 4, 6, 7, 8, 9, 12]
     if 12 in nums:
-        extras.append([12, 10])
-        extras.append([12, 11])
+        extras.append((12, 10))
+        extras.append((12, 11))
     if 11 in nums:
-        extras.append([11, 10])
-        extras.append([11, 11])
-    drillMult(student1, student2, file, nums, lis, extras)
+        extras.append((11, 10))
+        extras.append((11, 11))
+    return makeQuestions(nums, lis, extras)
 
 if __name__ == "__main__":
     student1 = input("Student 1? ")
     student2 = input("Student 2? ")
-    tables = input("Times tables? ").split()
-    tables = [int(i) for i in tables]
-    file = open(os.getcwd() + "\\tutoring-files\\" + student1 + student2 + ".txt", "a")
-    drillTimesTables(tables, student1, student2, file)
+    operation = 'stuff'
+
+    while (operation != 'times' and operation != 'minus' and operation != 'plus'):
+        operation = input("Operation? ")
+
+    if (operation == 'times'):
+        tables = input("Times tables? ").split()
+        tables = [int(i) for i in tables]
+        file = open(os.getcwd() + "\\tutoring-files\\multiplication\\" + student1 + student2 + ".txt", "a")
+        allNums = makeTimesTablesHard(tables)
+
+    else:
+        tables = input("Subtraction tables? ").split()
+        tables = [int(i) for i in tables]
+        file = open(os.getcwd() + "\\tutoring-files\\subtraction\\" + student1 + student2 + ".txt", "a")
+        allNums = makeQuestions(tables, list(range(1, 9)))
+    
+    drill(allNums, operation, student1, student2, file)
     

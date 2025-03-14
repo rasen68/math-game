@@ -2,12 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-directory = os.getcwd() + "\\tutoring-files\\"
+directory = os.getcwd() + "\\tutoring-files\\multiplication\\"
 times = {}
 plt.rcParams.update({'font.size': 8})
 
 
 for filename in os.listdir(directory):
+    print(filename)
     f = os.path.join(directory, filename)
     if not os.path.isfile(f):
         continue
@@ -31,10 +32,10 @@ for filename in os.listdir(directory):
             j = i + 1
             answerExists = True
             for newLine in lines[i+1:]:
-                if "times" in newLine:
-                    break
                 if "[" in newLine: 
                     answerExists = False
+                    break
+                if "times" in newLine:
                     break
                 j += 1
             
