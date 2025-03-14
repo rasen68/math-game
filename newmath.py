@@ -43,7 +43,8 @@ def questionAnswer(i: Node, operation: str, student: str, file: TextIO):
     print("Good job!")
     print()
     mixer.init()
-    mixer.music.load(os.path.dirname(os.path.abspath(__file__)) + "\\Untitled-score.ogg")
+    dir = os.path.dirname(os.path.abspath(__file__))
+    mixer.music.load(os.path.join(dir, "Untitled-score.ogg"))
     mixer.music.play()
 
     file.write(str(round(time, 2)) + "\n")
@@ -160,13 +161,13 @@ if __name__ == "__main__":
     if (operation == 'times'):
         tables = input("Times tables? ").split()
         tables = [int(i) for i in tables]
-        file = open(os.getcwd() + "\\tutoring-files\\multiplication\\" + student1 + student2 + ".txt", "a")
+        file = open(os.path.join(os.getcwd(), "tutoring-files", "multiplication", student1 + student2 + ".txt"), "a")
         allNums = makeTimesTablesHard(tables)
 
     else:
         tables = input("Subtraction tables? ").split()
         tables = [int(i) for i in tables]
-        file = open(os.getcwd() + "\\tutoring-files\\subtraction\\" + student1 + student2 + ".txt", "a")
+        file = open(os.path.join(os.getcwd(), "tutoring-files", "subtraction", student1 + student2 + ".txt"), "a")
         allNums = makeQuestions(tables, list(range(1, 9)))
     
     drill(allNums, operation, student1, student2, file)
