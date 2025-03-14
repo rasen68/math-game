@@ -2,13 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-directory = os.getcwd() + "\\tutoring-files\\multiplication\\"
+directory = os.path.join(os.getcwd(), "tutoring-files", "multiplication")
 times = {}
 plt.rcParams.update({'font.size': 8})
 
 
 for filename in os.listdir(directory):
-    print(filename)
+    print(f"\n{filename}: ", end='')
+    tables = []
     f = os.path.join(directory, filename)
     if not os.path.isfile(f):
         continue
@@ -48,6 +49,9 @@ for filename in os.listdir(directory):
             if time > 30:
                time = 30
 
+            if num1 not in tables:
+                tables.append(num1)
+                print(num1, end=' ')
             if (num1, num2) not in times:
                 times[(num1, num2)] = [time]
             else:

@@ -9,7 +9,7 @@ from typing import List, Tuple, TextIO
 def inputLoop(question, answer, file):
     start = time.time()
     while True:
-        userAnswer = input()
+        userAnswer = input().strip()
         if userAnswer == str(answer):
             file.write(userAnswer + "\n")
             return time.time() - start
