@@ -21,10 +21,16 @@ class Node:
     def __gt__(self, other): 
         return self.priority > other.priority
 
-class maxHeap:
-    def __init__(self, array: List[Node]):
+    def __str__(self):
+        return str(self.data) + ": " + str(self.priority)
+
+class MaxHeap:
+    last2 = [(0, 0), (0, 0)]
+
+    def __init__(self, array: List[Node], last2: List[Node]):
         self.array = [i for i in array]
         self.size = len(array)
+        MaxHeap.last2 = last2
 
         secondLastLayer = 2 ** (math.floor(math.log2(self.size))) - 2
 
@@ -76,10 +82,16 @@ class maxHeap:
             return self.array[1]
         return max(self.array[1], self.array[2])
 
+    def extract(self) -> Node:
+        if self.peekMax().data not in MaxHeap.last2:
+            return self.extractMax()
+        elif self.peekSecondMax().data not in MaxHeap.last2:
+            return self.extractSecondMax()
+        else:
+            return self.extractThirdMax()
+
     def extractMax(self) -> Node:
         arr = self.array
-        #print(len(arr))
-        #print(self.size)
         arr[0], arr[self.size - 1] = arr[self.size - 1], arr[0]
         self.size -= 1
         ret = self.array.pop(self.size)
@@ -118,6 +130,9 @@ class maxHeap:
         return ret
 
     def insert(self, new: Node):
+        MaxHeap.last2.pop(0)
+        MaxHeap.last2.append(new.data)
+
         self.array.append(new)
         self.size += 1
         self.upheap(self.size - 1)
