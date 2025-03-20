@@ -2,7 +2,6 @@ import os
 from heap import MaxHeap, Node
 from mathio import MathIO
 from typing import List, Tuple
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 
 def times(first: int, second: int) -> int:
     return first * second 
