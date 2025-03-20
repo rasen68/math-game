@@ -4,7 +4,7 @@ import time
 from heap import Node, maxHeap
 
 def parent(i: int) -> int:
-        return (i - 1) // 2
+    return (i - 1) // 2
     
 def leftChild(i: int) -> int:
     return (2 * i) + 1
@@ -13,8 +13,8 @@ def rightChild(i: int) -> int:
     return (2 * i) + 2
 
 class HeapTest(unittest.TestCase):
-    heapSize = 40
-    trials = 1000
+    heapSize = 400
+    trials = 10
 
     def assertHeap(self, heap: maxHeap):
         for i in range (heap.size):

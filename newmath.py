@@ -1,12 +1,18 @@
 import random
 import time
 import os
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 from pygame import mixer
 from heap import maxHeap, Node
 from typing import List, Tuple, TextIO
 
-def inputLoop(question, answer, file):
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
+student1 = ""
+student2 = ""
+operation = ""
+file = ""
+seed = 0
+
+def inputLoop(question: str, answer: int):
     start = time.time()
     while True:
         userAnswer = input().strip()
@@ -27,7 +33,7 @@ def inputLoop(question, answer, file):
             print()
             print(question)
 
-def questionAnswer(i: Node, operation: str, student: str, file: TextIO):
+def questionAnswer(i: Node, student: str):
     first = i.data[0]
     second = i.data[1]
     question = f"{student}: What's {first} {operation} {second}?"
@@ -36,7 +42,7 @@ def questionAnswer(i: Node, operation: str, student: str, file: TextIO):
     print(question)
     file.write(question + "\n")
 
-    time = inputLoop(question, answer, file)
+    time = inputLoop(question, answer)
     if time == 0:
         return 0
 
@@ -50,72 +56,74 @@ def questionAnswer(i: Node, operation: str, student: str, file: TextIO):
     file.write(str(round(time, 2)) + "\n")
     return time
 
-def pretestMult(student1: str, student2: str, allNums: List[Node], file: TextIO):
-    shuffled = [i for i in allNums]
-    random.shuffle(shuffled)
+def pretestMult(allNums: List[Node]) -> Tuple[maxHeap, maxHeap, List[Node]]:
+    shuffled = []
+    tempSeed = seed
+    while len(allNums) > 0:
+        i = tempSeed % len(allNums)
+        tempSeed //= len(allNums)
+        if tempSeed == 0: tempSeed = seed
+
+        shuffled.append(allNums.pop(i))
+
     last2 = [(0, 0), (0, 0)]
     arr = []
     whichStudent = student1
 
     for i in shuffled:
-        t = questionAnswer(i, "times", whichStudent, file)
+        t = questionAnswer(i, whichStudent)
         #print(f"{t:.2f}")
         arr.append(Node(t, i.data))
         last2.pop(0)
         last2.append(i)
         whichStudent = student1 if whichStudent==student2 else student2
-
-    heap = maxHeap(arr)
-    return heap, last2 
-
-def drill(allNums: List[Node], operation: str, student1: str, student2: str, file: TextIO):
-    if operation == "times":
-        heap1, last2 = pretestMult(student1, student2, allNums, file)
-    #else:
-       # queue1, last2 = pretestSub(student1, student2, )
     
-    dummy = Node(0, (0, 0))
-    heap2 = maxHeap([dummy]) # heap initialisation requires nonempty array
-    heap2.extractMax()
-    heap2.array = [i for i in heap1.array]
+    heap1 = maxHeap(arr)
+    heap2 = maxHeap(arr)
+    return heap1, heap2, last2 
 
-    whichStudent = student1 if len(allNums)%2==0 else student2
-    whichHeap = heap1 if len(allNums)%2==0 else heap2
+def findQuestion(heap: maxHeap, last2: List[Node]):
+    if heap.peekMax().data not in last2:
+        return heap.extractMax()
+    elif heap.peekSecondMax().data not in last2:
+        return heap.extractSecondMax()
+    else:
+        return heap.extractThirdMax()
+
+def processQuestion(last2: List[Node], heap: maxHeap, question: Node, student: str):
+    last2.pop(0)
+    last2.append(question.data)
+
+    t2 = questionAnswer(question, student) 
+    if t2 == 0:
+        heap.insert(question)
+        return 0
+    
+    average = (t2 * 2 + question.priority) / 3
+    newQuestion = Node(average, question.data) if average < 30 else Node(30, question.data)
+
+    heap.insert(newQuestion)
+
+def drill(which: int, heaps: Tuple[maxHeap], last2: List[Node]):
+    whichStudent = student1 if which==0 else student2
+    whichHeap = heaps[0] if which==0 else heaps[1]
     
     while True:
-        # find question
-        if whichHeap.peekMax().data not in last2:
-            question = whichHeap.extractMax()
-        elif whichHeap.peekSecondMax().data not in last2:
-            question = whichHeap.extractSecondMax()
-        else:
-            question = whichHeap.extractThirdMax()
+        question = findQuestion(whichHeap, last2)
 
-        # process question
-        last2.pop(0)
-        last2.append(question.data)
-
-        t2 = questionAnswer(question, operation, whichStudent, file) 
-        if t2 == 0:
+        if processQuestion(last2, whichHeap, question, whichStudent) == 0:
             break
         
-        elif (t2 * 2 + question.priority) / 3 > 30:
-            average = 30
-        else:
-            average = (t2 * 2 + question.priority) / 3
-        question = Node(average, question.data)
-
-        whichHeap.insert(question)
 
         # + 1.5 seconds to fastest question
         last = whichHeap.size - 1
         whichHeap.update(last, whichHeap.array[last].priority + 1.5)
 
         whichStudent = student1 if whichStudent==student2 else student2
-        whichHeap = heap1 if whichHeap==heap2 else heap2
+        whichHeap = heaps[0] if whichHeap==heaps[1] else heaps[1]
 
-    file.write(student1 + ": " + str(heap1) + "\n")
-    file.write(student2 + ": " + str(heap2))
+    file.write(student1 + ": " + str(heaps[0]) + "\n")
+    file.write(student2 + ": " + str(heaps[1]))
     file.close()
                      
 def makeQuestions(num1s: List[int], num2s: List[int] = None, extras: List[Tuple[int, int]] = None) -> List[Node]:
@@ -135,11 +143,11 @@ def makeQuestions(num1s: List[int], num2s: List[int] = None, extras: List[Tuple[
     
     return allNums
     
-def makeTimesTables(nums) -> List[Node]:
+def makeTimesTables(nums: List[int]) -> List[Node]:
     lis = list(range(2, 13))
     return makeQuestions(nums, lis)
 
-def makeTimesTablesHard(nums) -> List[Node]:
+def makeTimesTablesHard(nums: List[int]) -> List[Node]:
     extras = []
     lis = [3, 4, 6, 7, 8, 9, 12]
     if 12 in nums:
@@ -150,25 +158,58 @@ def makeTimesTablesHard(nums) -> List[Node]:
         extras.append((11, 11))
     return makeQuestions(nums, lis, extras)
 
-if __name__ == "__main__":
+def setUp():
+    # These global variables never change after main access
+    global student1, student2, operation, file, seed
+
     student1 = input("Student 1? ")
     student2 = input("Student 2? ")
-    operation = 'stuff'
+    operation = ""
 
-    while (operation != 'times' and operation != 'minus' and operation != 'plus'):
+    valid = ["times", "timeshard", "test", "minus", "plus"]
+
+    while operation not in valid:
         operation = input("Operation? ")
 
-    if (operation == 'times'):
+    if operation == "test":
+        seed = 1_234_567_890
+        operation = input("Operation? ")
+    else:
+        seed = random.randint(1_000_000_000, 10_000_000_000)
+
+    if (operation == 'timeshard'):
+        operation = 'times'
         tables = input("Times tables? ").split()
         tables = [int(i) for i in tables]
         file = open(os.path.join(os.getcwd(), "tutoring-files", "multiplication", student1 + student2 + ".txt"), "a")
         allNums = makeTimesTablesHard(tables)
+        which = len(allNums)%2
+        heap1, heap2, last2 = pretestMult(allNums)
 
-    else:
+    elif (operation == 'times'):
+        tables = input("Times tables? ").split()
+        tables = [int(i) for i in tables]
+        file = open(os.path.join(os.getcwd(), "tutoring-files", "multiplication", student1 + student2 + ".txt"), "a")
+        allNums = makeTimesTables(tables)
+        which = len(allNums)%2
+        heap1, heap2, last2 = pretestMult(allNums)
+
+    elif (operation == 'minus'):
         tables = input("Subtraction tables? ").split()
         tables = [int(i) for i in tables]
         file = open(os.path.join(os.getcwd(), "tutoring-files", "subtraction", student1 + student2 + ".txt"), "a")
         allNums = makeQuestions(tables, list(range(1, 9)))
     
-    drill(allNums, operation, student1, student2, file)
+    elif (operation == 'plus'):
+        tables = input("Addition tables? ").split()
+        tables = [int(i) for i in tables]
+        file = open(os.path.join(os.getcwd(), "tutoring-files", "addition", student1 + student2 + ".txt"), "a")
+        allNums = makeQuestions(tables, list(range(1, 9)))
     
+    else:
+        raise ValueError
+    
+    drill(which, (heap1, heap2), last2)
+
+setUp()
+
