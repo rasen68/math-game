@@ -44,7 +44,8 @@ def processQuestion(io: MathIO, heap: MaxHeap, question: Node):
         return 0
     
     average = (t2 * 2 + question.priority) / 3
-    newQuestion = Node(average, question.data) if average < 30 else Node(30, question.data)
+    if average > 30: average = 30
+    newQuestion = Node(average, question.data)
 
     heap.insert(newQuestion)
 
@@ -79,17 +80,32 @@ def makeQuestions(num1s: List[int], num2s: List[int] = None,
     
     return allNums
     
-def makeAddition(nums: List[int]) -> List[Node]:
+def makeAddition(nums: List[int]) -> List[Tuple[int, int]]:
+    allNums = []
     for i in nums:
-        if i == -1:
-            makeQuestions()
+        if i == 1:
+            allNums += makeQuestions([1], range(1, 11))
+        elif i == 2:
+            allNums += makeQuestions([2], range(2, 11))
+        elif i == 8:
+            allNums += makeQuestions([8], range(3, 9))
+        elif i == 9:
+            allNums += makeQuestions([9], range(3, 10))
+        elif i == 10:
+            allNums += makeQuestions([], extras=[(7, 3), (6, 4), (5, 5)])
+        elif i == -1:
+            allNums += makeQuestions([3], range(3, 7), [(4, 4), (4, 5)])
+        elif i == 11:
+            allNums += makeQuestions([7], range(4, 8), [(5, 6), (6, 6)])
+        else:
+            allNums += makeQuestions([i], range(2, 10))
+    return allNums
 
-
-def makeTimesTables(nums: List[int]) -> List[Node]:
+def makeTimesTables(nums: List[int]) -> List[Tuple[int, int]]:
     lis = list(range(2, 13))
     return makeQuestions(nums, lis)
 
-def makeTimesTablesHard(nums: List[int]) -> List[Node]:
+def makeTimesTablesHard(nums: List[int]) -> List[Tuple[int, int]]:
     extras = []
     lis = [3, 4, 6, 7, 8, 9, 12]
     if 12 in nums:
