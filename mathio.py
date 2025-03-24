@@ -4,8 +4,8 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import random
 
 from pygame import mixer
-from heap import Node, MaxHeap
-from typing import Callable
+from heap import MaxHeap
+from typing import Callable, Tuple
 
 class MathIO:
     def __init__(self):
@@ -38,9 +38,10 @@ class MathIO:
 
         if self.opStr == "test":
             self.opStr = input("Operation? ")
-            return 1_234_567_890
+            self.seed = 1_234_567_890
         else:
-            return random.randint(1_000_000_000, 10_000_000_000)
+            self.seed = random.randint(1_000_000_000, 10_000_000_000)
+
     
     def inputLoop(self, question: str, answer: int):
         start = time.time()
@@ -57,6 +58,8 @@ class MathIO:
                 return time.time() - start
             elif userAnswer == "unpause":
                 start = time.time()
+            elif userAnswer[:5] == "wait ":
+                start -= int(userAnswer[5:])
             else:
                 self.file.write(userAnswer + "\n")
                 print("Not quite! Try again")
@@ -70,9 +73,9 @@ class MathIO:
         mixer.music.load(self.score)
         mixer.music.play()
 
-    def questionAnswer(self, i: Node):
-        first = i.data[0]
-        second = i.data[1]
+    def questionAnswer(self, i: Tuple[int, int]):
+        first = i[0]
+        second = i[1]
         question = f"{self.getStudent()}: What's {first} {self.opStr} {second}?"
         answer = self.operation(first, second)
 

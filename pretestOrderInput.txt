@@ -1,0 +1,35 @@
+test1
+test2
+test
+times
+1
+wait 8
+8
+wait 6
+6
+wait 4
+4
+wait 11
+11
+wait 3
+wrong answer
+wait 4
+7
+wait 5
+5
+wait 3
+3
+wait 10
+10
+many
+wrong
+answers
+wait 12
+12
+wait 9
+9
+wait 2
+2
+wait 3
+12
+end

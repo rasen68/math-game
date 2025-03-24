@@ -27,7 +27,7 @@ class Node:
 class MaxHeap:
     last2 = [(0, 0), (0, 0)]
 
-    def __init__(self, array: List[Node], last2: List[Node]):
+    def __init__(self, array: List[Node], last2: List[Tuple[int, int]] = [(0, 0), (0, 0)]):
         self.array = [i for i in array]
         self.size = len(array)
         MaxHeap.last2 = last2

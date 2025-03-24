@@ -58,6 +58,8 @@ for filename in os.listdir(directory):
                 times[(num1, num2)].append(time)
         i += 1
 
+print()
+
 for thing in times:
     times[thing] = round(np.mean(times[thing]), 2)
 

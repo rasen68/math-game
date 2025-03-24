@@ -1,4 +1,3 @@
-import os
 from heap import MaxHeap, Node
 from mathio import MathIO
 from typing import List, Tuple
@@ -12,7 +11,7 @@ def minus(first: int, second: int) -> int:
 def plus(first: int, second: int) -> int:
     return first + second
 
-def seedShuffle(seed: int, allNums: List[Node]) -> List[Node]:
+def seedShuffle(seed: int, allNums: List[Tuple[int, int]]) -> List[Tuple[int, int]]:
     shuffled = []
     tempSeed = seed
     while len(allNums) > 0:
@@ -23,23 +22,23 @@ def seedShuffle(seed: int, allNums: List[Node]) -> List[Node]:
         shuffled.append(allNums.pop(i))
     return shuffled
 
-def pretest(io: MathIO, seed: int, allNums: List[Node]) -> Tuple[MaxHeap, MaxHeap]:
-    shuffled = seedShuffle(seed, allNums)
+def pretest(io: MathIO, allNums: List[Tuple[int, int]]) -> Tuple[MaxHeap, MaxHeap]:
+    shuffled = seedShuffle(io.seed, allNums)
 
     last2 = [(0, 0),(0, 0)]
     arr = []
     for i in shuffled:
         t = io.questionAnswer(i)
-        arr.append(Node(t, i.data))
+        arr.append(Node(t, i))
         last2.pop(0)
-        last2.append(i.data)
+        last2.append(i)
     
     heap1 = MaxHeap(arr, last2)
     heap2 = MaxHeap(arr, last2)
     return heap1, heap2 
 
-def processQuestion(heap: MaxHeap, question: Node):
-    t2 = io.questionAnswer(question) 
+def processQuestion(io: MathIO, heap: MaxHeap, question: Node):
+    t2 = io.questionAnswer(question.data) 
     if t2 == 0:
         heap.insert(question)
         return 0
@@ -54,7 +53,7 @@ def drill(io: MathIO, heaps: Tuple[MaxHeap]):
     
     while True:
         question = whichHeap.extract()
-        if processQuestion(whichHeap, question) == 0:
+        if processQuestion(io, whichHeap, question) == 0:
             break
 
         # + 1.5 seconds to fastest question
@@ -64,23 +63,28 @@ def drill(io: MathIO, heaps: Tuple[MaxHeap]):
 
     io.end(heaps[0], heaps[1])
                      
-def makeQuestions(num1s: List[int], num2s: List[int] = None, extras: List[Tuple[int, int]] = None) -> List[Node]:
+def makeQuestions(num1s: List[int], num2s: List[int] = None, 
+                  extras: List[Tuple[int, int]] = None) -> List[Tuple[int, int]]:
     if not num2s:
         num2s = num1s
     allNums = []
 
     for num1 in num1s:
         for num2 in num2s:
-            node = Node(0, (num1, num2))
-            allNums.append(node)
+            allNums.append((num1, num2))
     
     if extras:
         for extra in extras:
-            node = Node(0, extra)
-            allNums.append(node)
+            allNums.append(extra)
     
     return allNums
     
+def makeAddition(nums: List[int]) -> List[Node]:
+    for i in nums:
+        if i == -1:
+            makeQuestions()
+
+
 def makeTimesTables(nums: List[int]) -> List[Node]:
     lis = list(range(2, 13))
     return makeQuestions(nums, lis)
@@ -101,34 +105,41 @@ def setOpStr(io: MathIO):
         io.setOp(times)
         io.setFile("multiplication")
         tables = [int(i) for i in input("Times tables? ").split()]
+        print()
 
         return makeTimesTablesHard(tables)
     elif (io.opStr == 'times'):
         io.setOp(times)
         io.setFile("multiplication")
         tables = [int(i) for i in input("Times tables? ").split()]
+        print()
 
         return makeTimesTables(tables)
     elif (io.opStr == 'minus'):
         io.setOp(minus)
         io.setFile("subtraction")
         tables = [int(i) for i in input("Subtraction tables? ").split()]
+        print()
 
         return makeQuestions(tables, list(range(1, 9)))
     elif (io.opStr == 'plus'):
         io.setOp(plus)
         io.setFile("addition")
         tables = [int(i) for i in input("Addition tables? ").split()]
+        print()
 
-        return makeQuestions(io, tables, list(range(1, 9)))
+        return makeQuestions(tables, list(range(1, 9)))
     
     else:
         raise ValueError
 
-if __name__ == "__main__":
+def main():
     io = MathIO()
     seed = io.setInput()
 
     allNums = setOpStr(io)
-    heap1, heap2 = pretest(io, seed, allNums)
+    heap1, heap2 = pretest(io, allNums)
     drill(io, (heap1, heap2))
+
+if __name__ == "__main__":
+    main()

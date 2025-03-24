@@ -1,0 +1,50 @@
+Student 1? Student 2? Operation? Operation? Times tables? 
+test1: What's 1 times 8?
+Good job!
+
+test2: What's 1 times 6?
+Good job!
+
+test1: What's 1 times 4?
+Good job!
+
+test2: What's 1 times 11?
+Good job!
+
+test1: What's 1 times 7?
+Not quite! Try again
+
+test1: What's 1 times 7?
+Good job!
+
+test2: What's 1 times 5?
+Good job!
+
+test1: What's 1 times 3?
+Good job!
+
+test2: What's 1 times 10?
+Good job!
+
+test1: What's 1 times 12?
+Not quite! Try again
+
+test1: What's 1 times 12?
+Not quite! Try again
+
+test1: What's 1 times 12?
+Not quite! Try again
+
+test1: What's 1 times 12?
+Good job!
+
+test2: What's 1 times 9?
+Good job!
+
+test1: What's 1 times 2?
+Good job!
+
+test2: What's 1 times 12?
+Good job!
+
+test1: What's 1 times 11?

@@ -1,7 +1,7 @@
 import unittest
 import random
 import time
-from heap import Node, maxHeap
+from heap import Node, MaxHeap
 
 def parent(i: int) -> int:
     return (i - 1) // 2
@@ -16,7 +16,7 @@ class HeapTest(unittest.TestCase):
     heapSize = 400
     trials = 10
 
-    def assertHeap(self, heap: maxHeap):
+    def assertHeap(self, heap: MaxHeap):
         for i in range (heap.size):
             l = leftChild(i)
             r = rightChild(i)
@@ -35,11 +35,11 @@ class HeapTest(unittest.TestCase):
             priorities = [random.random() * 10 for i in range(self.heapSize)]
             for j in range(self.heapSize):
                 unsorted.append(Node(priorities[j], (0, 0)))
-            heap = maxHeap(unsorted)
+            heap = MaxHeap(unsorted)
 
             self.assertHeap(heap)
         
-        print("\nHeapify:", time.time() - start)
+        print("\nheapify:", time.time() - start)
 
     def test_extractMax(self):
         start = time.time()
@@ -49,7 +49,7 @@ class HeapTest(unittest.TestCase):
             priorities = [random.random() * 10 for i in range(self.heapSize)]
             for j in range(self.heapSize):
                 unsorted.append(Node(priorities[j], (0, 0)))
-            heap = maxHeap(unsorted)
+            heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
             # this particular program will never need an empty heap
@@ -70,7 +70,7 @@ class HeapTest(unittest.TestCase):
             priorities = [random.random() * 10 for i in range(self.heapSize)]
             for j in range(self.heapSize):
                 unsorted.append(Node(priorities[j], (0, 0)))
-            heap = maxHeap(unsorted)
+            heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
             for i in range(self.heapSize - 1):
@@ -90,7 +90,7 @@ class HeapTest(unittest.TestCase):
             priorities = [random.random() * 10 for i in range(self.heapSize)]
             for j in range(self.heapSize):
                 unsorted.append(Node(priorities[j], (0, 0)))
-            heap = maxHeap(unsorted)
+            heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
             for i in range(self.heapSize - 2):
@@ -110,7 +110,7 @@ class HeapTest(unittest.TestCase):
             priorities = [random.random() * 10 for i in range(self.heapSize)]
             for j in range(self.heapSize):
                 unsorted.append(Node(priorities[j], (0, 0)))
-            heap = maxHeap(unsorted)
+            heap = MaxHeap(unsorted)
             
             for i in range(self.heapSize):
                 heap.update(i, random.random() * 10)
