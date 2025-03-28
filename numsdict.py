@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
 def hash(nums: Tuple[int, int]) -> int:
-        return nums[0] + 31*nums[1]
+    return nums[0] + 31*nums[1]
 
 class NumsDict:
     def __init__(self):
@@ -13,7 +13,7 @@ class NumsDict:
         if key not in self.dict:
             self.dict[key] = [sortedTup]
             return True
-        elif sortedTup in self.dict[key]:
+        elif sortedTup not in self.dict[key]:
             self.dict[key].append(sortedTup)
             return True
         return False
