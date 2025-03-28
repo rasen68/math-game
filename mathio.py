@@ -41,6 +41,8 @@ class MathIO:
             self.seed = 1_234_567_890
         else:
             self.seed = random.randint(1_000_000_000, 10_000_000_000)
+        
+        self.setFile(self.opStr)
 
     
     def inputLoop(self, question: str, answer: int):

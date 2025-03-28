@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-directory = os.path.join(os.getcwd(), "tutoring-files", "multiplication")
+operation = input("Operation? ")
+directory = os.path.join(os.getcwd(), "tutoring-files", operation)
 times = {}
 plt.rcParams.update({'font.size': 8})
-
 
 for filename in os.listdir(directory):
     print(f"\n{filename}: ", end='')
@@ -18,13 +18,13 @@ for filename in os.listdir(directory):
     i = 0
     while i < len(lines):
         line = lines[i]
-        if "times" in line:
-            num1loc = line.index("times") - 2
+        if operation in line:
+            num1loc = line.index(operation) - 2
             if line[num1loc - 1] == " ":    
                 num1 = int(line[num1loc])
             else: num1 = int(line[num1loc]) + 10
 
-            num2loc = line.index("times") + len("times ")
+            num2loc = line.index(operation) + len(operation)+1
             if line[num2loc + 1] == "?":
                 num2 = int(line[num2loc])
             else:
@@ -36,7 +36,7 @@ for filename in os.listdir(directory):
                 if "[" in newLine: 
                     answerExists = False
                     break
-                if "times" in newLine:
+                if operation in newLine:
                     break
                 j += 1
             
@@ -65,12 +65,15 @@ for thing in times:
 
 heatmap = np.zeros((11, 11))
 
+offset = 2 if operation == "times" else 1
 for thing in times:
-    heatmap[thing[0] - 2][thing[1] - 2] = times[thing]
+    heatmap[thing[0] - offset][thing[1] - offset] = times[thing]
+    if operation == "plus":
+        heatmap[thing[1] - offset][thing[0] - offset] = times[thing]
 
 # From: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
-nums1 = [str(i+2) for i in range(11)]
-nums2 = [str(i+2) for i in range(11)]
+nums1 = [str(i+offset) for i in range(11)]
+nums2 = [str(i+offset) for i in range(11)]
 
 fig, ax = plt.subplots()
 im = ax.imshow(heatmap, cmap="OrRd")
@@ -84,6 +87,6 @@ for i in range(len(nums1)):
         text = ax.text(j, i, heatmap[i, j],
                        ha="center", va="center", color="w")
 
-ax.set_title("Times tables")
+ax.set_title(operation + " tables")
 fig.tight_layout()
 plt.show()

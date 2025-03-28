@@ -1,6 +1,7 @@
 from heap import MaxHeap, Node
 from mathio import MathIO
 from typing import List, Tuple
+from numsdict import NumsDict
 
 def times(first: int, second: int) -> int:
     return first * second 
@@ -33,6 +34,7 @@ def pretest(io: MathIO, allNums: List[Tuple[int, int]]) -> Tuple[MaxHeap, MaxHea
         last2.pop(0)
         last2.append(i)
     
+    print() # newline to mark the end of pretest
     heap1 = MaxHeap(arr, last2)
     heap2 = MaxHeap(arr, last2)
     return heap1, heap2 
@@ -63,49 +65,45 @@ def drill(io: MathIO, heaps: Tuple[MaxHeap]):
         whichHeap = heaps[io.which]
 
     io.end(heaps[0], heaps[1])
-                     
-def makeQuestions(num1s: List[int], num2s: List[int] = None, 
-                  extras: List[Tuple[int, int]] = None) -> List[Tuple[int, int]]:
-    if not num2s:
-        num2s = num1s
-    allNums = []
-
-    for num1 in num1s:
-        for num2 in num2s:
-            allNums.append((num1, num2))
-    
-    if extras:
-        for extra in extras:
-            allNums.append(extra)
-    
-    return allNums
     
 def makeAddition(nums: List[int]) -> List[Tuple[int, int]]:
+    dict = NumsDict()
     allNums = []
     for i in nums:
         if i == 1:
-            allNums += makeQuestions([1], range(1, 11))
+            allNums += dict.makeQuestions([1], range(1, 11))
         elif i == 2:
-            allNums += makeQuestions([2], range(2, 11))
+            allNums += dict.makeQuestions([2], range(2, 11))
         elif i == 8:
-            allNums += makeQuestions([8], range(3, 9))
+            allNums += dict.makeQuestions([8], range(1, 9))
         elif i == 9:
-            allNums += makeQuestions([9], range(3, 10))
+            allNums += dict.makeQuestions([9], range(1, 10))
         elif i == 10:
-            allNums += makeQuestions([], extras=[(7, 3), (6, 4), (5, 5)])
+            allNums += dict.makeQuestions([], extras=[(i, 10-i) for i in range(1, 6)])
         elif i == -1:
-            allNums += makeQuestions([3], range(3, 7), [(4, 4), (4, 5)])
+            allNums += dict.makeQuestions([3], range(3, 7), [(4, 4), (4, 5)])
         elif i == 11:
-            allNums += makeQuestions([7], range(4, 8), [(5, 6), (6, 6)])
+            allNums += dict.makeQuestions([7], range(4, 8), [(5, 6), (6, 6)])
+        elif i == 22:
+            allNums += dict.makeQuestions([], extras=[(i, i) for i in range(1, 11)])
         else:
-            allNums += makeQuestions([i], range(2, 10))
+            allNums += dict.makeQuestions([i], range(2, 10))
     return allNums
 
+def makeSubtraction(nums: List[int]) -> List[Tuple[int, int]]:
+    dict = NumsDict()
+    allNums = []
+    for i in nums:
+        if i == 1:
+            allNums += dict.makeQuestions()
+
 def makeTimesTables(nums: List[int]) -> List[Tuple[int, int]]:
+    dict = NumsDict()
     lis = list(range(2, 13))
-    return makeQuestions(nums, lis)
+    return dict.makeQuestions(nums, lis)
 
 def makeTimesTablesHard(nums: List[int]) -> List[Tuple[int, int]]:
+    dict = NumsDict()
     extras = []
     lis = [3, 4, 6, 7, 8, 9, 12]
     if 12 in nums:
@@ -114,44 +112,42 @@ def makeTimesTablesHard(nums: List[int]) -> List[Tuple[int, int]]:
     if 11 in nums:
         extras.append((11, 10))
         extras.append((11, 11))
-    return makeQuestions(nums, lis, extras)
+    return dict.makeQuestions(nums, lis, extras)
 
-def setOpStr(io: MathIO):
+def setOpStr(io: MathIO) -> List[Tuple[int, int]]:
     if (io.opStr == 'timeshard'):
+        io.opStr = 'times'
         io.setOp(times)
-        io.setFile("multiplication")
+        io.setFile("times")
         tables = [int(i) for i in input("Times tables? ").split()]
         print()
 
         return makeTimesTablesHard(tables)
     elif (io.opStr == 'times'):
         io.setOp(times)
-        io.setFile("multiplication")
         tables = [int(i) for i in input("Times tables? ").split()]
         print()
 
         return makeTimesTables(tables)
     elif (io.opStr == 'minus'):
         io.setOp(minus)
-        io.setFile("subtraction")
         tables = [int(i) for i in input("Subtraction tables? ").split()]
         print()
 
-        return makeQuestions(tables, list(range(1, 9)))
+        return makeSubtraction(tables)
     elif (io.opStr == 'plus'):
         io.setOp(plus)
-        io.setFile("addition")
         tables = [int(i) for i in input("Addition tables? ").split()]
         print()
 
-        return makeQuestions(tables, list(range(1, 9)))
+        return makeAddition(tables)
     
     else:
         raise ValueError
 
 def main():
     io = MathIO()
-    seed = io.setInput()
+    io.setInput()
 
     allNums = setOpStr(io)
     heap1, heap2 = pretest(io, allNums)
