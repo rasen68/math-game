@@ -1,0 +1,648 @@
+What's 6 times 2?
+12
+8.02
+What's 6 times 7?
+42
+6.26
+What's 6 times 9?
+54
+27.6
+What's 6 times 11?
+66
+4.38
+What's 6 times 6?
+36
+3.8
+What's 6 times 12?
+72
+12.35
+What's 6 times 8?
+48
+12.43
+What's 6 times 10?
+60
+5.35
+What's 6 times 4?
+24
+3.81
+What's 6 times 5?
+30
+5.37
+What's 6 times 3?
+18
+4.52
+What's 6 times 9?
+54
+7.02
+What's 6 times 8?
+48
+6.32
+What's 6 times 12?
+72
+22.18
+What's 6 times 2?
+12
+8.29
+What's 6 times 9?
+54
+11.81
+What's 6 times 8?
+48
+5.43
+What's 6 times 12?
+72
+5.46
+What's 6 times 2?
+12
+3.96
+What's 6 times 9?
+54
+12.04
+What's 6 times 8?
+48
+3.56
+What's 6 times 12?
+72
+4.56
+What's 6 times 11?
+66
+3.61
+What's 6 times 9?
+54
+5.39
+What's 6 times 8?
+48
+21.88
+What's 6 times 3?
+18
+4.11
+What's 6 times 2?
+12
+2.51
+What's 6 times 9?
+54
+7.15
+What's 6 times 8?
+48
+6.23
+What's 6 times 11?
+66
+3.77
+What's 6 times 5?
+30
+3.3
+What's 6 times 9?
+54
+55.0
+What's 6 times 8?
+48
+3.9
+What's 6 times 11?
+66
+2.71
+What's 6 times 12?
+72
+8.71
+What's 6 times 9?
+54
+10.31
+What's 6 times 2?
+[(16.87, (6, 9)), (7.93, (6, 12)), (6.35, (6, 10)), (6.32, (6, 5)), (6.26, (6, 7)), (6.04, (6, 11)), (5.91, (6, 3)), (5.84, (6, 8)), (5.81, (6, 4)), (5.8, (6, 6))]
+
+What's 7 times 2?
+14
+5.59
+What's 7 times 8?
+56
+22.9
+What's 7 times 6?
+42
+4.76
+What's 7 times 4?
+28
+3.88
+What's 7 times 7?
+49
+21.97
+What's 7 times 12?
+84
+12.34
+What's 7 times 5?
+35
+3.82
+What's 7 times 3?
+21
+3.35
+What's 7 times 11?
+77
+3.32
+What's 7 times 9?
+63
+24.22
+What's 7 times 10?
+70
+5.91
+What's 7 times 8?
+56
+12.55
+What's 7 times 7?
+49
+3.29
+What's 7 times 9?
+63
+4.29
+What's 7 times 12?
+84
+38.29
+What's 7 times 8?
+56
+8.72
+What's 7 times 7?
+49
+3.08
+What's 7 times 9?
+63
+5.9
+What's 7 times 12?
+84
+6.66
+What's 7 times 8?
+56
+8.45
+What's 7 times 10?
+70
+3.44
+What's 7 times 9?
+[(14.32, (7, 12)), (9.35, (7, 8)), (5.88, (7, 4)), (5.82, (7, 5)), (5.76, (7, 6)), (5.59, (7, 2)), (5.35, (7, 3)), (5.32, (7, 11)), (5.27, (7, 10)), (5.23, (7, 7))]
+
+What's 8 times 5?
+40
+4.44
+What's 8 times 9?
+72
+5.03
+What's 8 times 8?
+64
+3.88
+What's 8 times 7?
+56
+5.44
+What's 8 times 6?
+48
+9.67
+What's 8 times 12?
+96
+15.57
+What's 8 times 2?
+16
+5.16
+What's 8 times 11?
+88
+3.95
+What's 8 times 3?
+24
+5.14
+What's 8 times 4?
+32
+3.95
+What's 8 times 10?
+80
+3.98
+What's 8 times 12?
+96
+12.18
+What's 8 times 6?
+48
+12.47
+What's 8 times 7?
+56
+5.88
+What's 8 times 2?
+16
+5.91
+What's 8 times 12?
+96
+9.08
+What's 8 times 6?
+48
+9.46
+What's 8 times 8?
+64
+3.45
+What's 8 times 7?
+56
+4.73
+What's 8 times 12?
+96
+6.75
+What's 8 times 6?
+48
+15.96
+What's 8 times 10?
+80
+3.56
+What's 8 times 11?
+88
+2.54
+What's 8 times 12?
+96
+7.65
+What's 8 times 6?
+48
+11.65
+What's 8 times 9?
+72
+6.69
+What's 8 times 7?
+56
+6.5
+What's 8 times 12?
+96
+5.84
+What's 8 times 6?
+48
+10.99
+What's 8 times 9?
+72
+6.72
+What's 8 times 5?
+40
+5.26
+What's 8 times 12?
+96
+7.07
+What's 8 times 6?
+48
+15.61
+What's 8 times 11?
+88
+2.83
+What's 8 times 2?
+16
+5.13
+What's 8 times 12?
+96
+4.39
+What's 8 times 6?
+[(6.65, (8, 5)), (6.64, (8, 9)), (6.36, (8, 10)), (6.35, (8, 7)), (6.26, (8, 8)), (6.22, (8, 12)), (6.14, (8, 3)), (6.11, (8, 11)), (5.95, (8, 4)), (5.64, (8, 2))]
+Michael: What's 7 times 4?
+28
+16.43
+Luke: What's 7 times 7?
+49
+22.41
+Michael: What's 6 times 6?
+36
+5.4
+Luke: What's 7 times 11?
+77
+3.24
+Michael: What's 7 times 2?
+14
+3.54
+Luke: What's 6 times 9?
+54
+33.3
+Michael: What's 7 times 9?
+63
+4.8
+Luke: What's 7 times 5?
+35
+3.65
+Michael: What's 7 times 3?
+21
+3.39
+Luke: What's 6 times 2?
+12
+5.74
+Michael: What's 6 times 12?
+72
+16.58
+Luke: What's 6 times 8?
+48
+44.46
+Michael: What's 7 times 8?
+56
+24.83
+Luke: What's 6 times 5?
+30
+4.52
+Michael: What's 7 times 10?
+70
+3.43
+Luke: What's 6 times 7?
+42
+4.78
+Michael: What's 7 times 12?
+84
+29.35
+Luke: What's 6 times 10?
+60
+7.61
+Michael: What's 6 times 3?
+18
+12.49
+Luke: What's 6 times 4?
+24
+14.21
+Michael: What's 6 times 11?
+66
+3.31
+Luke: What's 6 times 8?
+48
+14.9
+Michael: What's 6 times 9?
+54
+8.82
+Luke: What's 7 times 12?
+84
+25.36
+Michael: What's 6 times 8?
+48
+32.64
+Luke: What's 6 times 9?
+54
+7.52
+Michael: What's 7 times 12?
+84
+20.25
+Luke: What's 7 times 8?
+56
+53.57
+Michael: What's 6 times 8?
+48
+23.28
+Luke: What's 7 times 12?
+84
+59.78
+Michael: What's 7 times 8?
+58
+56
+24.22
+Luke: What's 6 times 8?
+48
+18.98
+Michael: What's 7 times 12?
+84
+10.12
+Luke: What's 7 times 8?
+56
+86.42
+Michael: What's 6 times 8?
+48
+8.84
+Luke: What's 7 times 12?
+84
+25.17
+Michael: What's 7 times 8?
+56
+8.51
+Luke: What's 7 times 7?
+49
+30.11
+Michael: What's 6 times 9?
+54
+25.28
+Luke: What's 7 times 8?
+56
+10.53
+Michael: What's 7 times 7?
+49
+4.17
+Luke: What's 7 times 12?
+84
+13.34
+Michael: What's 6 times 9?
+54
+33.78
+Luke: What's 7 times 7?
+49
+6.88
+Michael: What's 6 times 12?
+72
+8.31
+Luke: What's 6 times 8?
+48
+14.52
+Michael: What's 6 times 9?
+54
+18.5
+Luke: What's 7 times 4?
+28
+5.51
+Michael: What's 6 times 4?
+24
+12.08
+Luke: What's 7 times 12?
+84
+5.87
+Michael: What's 6 times 9?
+54
+28.07
+Luke: What's 6 times 12?
+72
+14.4
+Michael: What's 7 times 4?
+28
+8.74
+Luke: What's 7 times 8?
+56
+6.26
+Michael: What's 6 times 9?
+54
+12.25
+Luke: What's 6 times 8?
+48
+40.63
+Michael: What's 7 times 8?
+56
+38.33
+Luke: What's 6 times 9?
+54
+15.35
+Michael: What's 6 times 8?
+48
+12.96
+Luke: What's 6 times 12?
+72
+11.07
+Michael: What's 7 times 8?
+54
+56
+44.24
+Luke: What's 6 times 8?
+48
+19.44
+Michael: What's 6 times 9?
+54
+22.14
+Luke: What's 6 times 4?
+24
+7.56
+Michael: What's 7 times 8?
+56
+18.89
+Luke: What's 6 times 8?
+48
+13.45
+Michael: What's 6 times 9?
+54
+5.76
+Luke: What's 6 times 3?
+18
+4.07
+Michael: What's 7 times 8?
+56
+5.42
+Luke: What's 6 times 8?
+48
+9.89
+Michael: What's 6 times 4?
+24
+5.22
+Luke: What's 6 times 9?
+54
+49.71
+Michael: What's 7 times 12?
+84
+31.48
+Luke: What's 7 times 7?
+49
+10.23
+Michael: What's 6 times 8?
+48
+43.13
+Luke: What's 6 times 9?
+54
+8.62
+Michael: What's 7 times 12?
+84
+15.34
+Luke: What's 6 times 12?
+72
+8.22
+Michael: What's 6 times 8?
+54
+48
+46.7
+Luke: What's 6 times 9?
+54
+17.19
+Michael: What's 7 times 12?
+84
+13.97
+Luke: What's 6 times 8?
+48
+10.86
+Michael: What's 6 times 12?
+72
+4.53
+Luke: What's 6 times 9?
+54
+11.27
+Michael: What's 6 times 8?
+48
+13.33
+Luke: What's 7 times 4?
+28
+10.32
+Michael: What's 7 times 12?
+84
+27.61
+Luke: What's 6 times 9?
+54
+8.23
+Michael: What's 6 times 8?
+46
+48
+10.15
+Luke: What's 7 times 7?
+49
+5.64
+Michael: What's 7 times 12?
+84
+19.05
+Luke: What's 6 times 8?
+48
+31.89
+Michael: What's 6 times 3?
+18
+5.91
+Luke: What's 6 times 10?
+60
+4.98
+Michael: What's 7 times 12?
+84
+5.48
+Luke: What's 6 times 8?
+48
+8.12
+Michael: What's 7 times 8?
+56
+46.3
+Luke: What's 7 times 4?
+28
+7.98
+Michael: What's 6 times 8?
+46
+48
+80.15
+Luke: What's 7 times 5?
+35
+4.01
+Michael: What's 7 times 8?
+56
+7.75
+Luke: What's 6 times 8?
+48
+7.09
+Michael: What's 7 times 12?
+84
+7.01
+Luke: What's 6 times 4?
+24
+6.8
+Michael: What's 6 times 8?
+48
+9.04
+Luke: What's 7 times 8?
+56
+2.97
+Michael: What's 7 times 4?
+28
+15.11
+Luke: What's 7 times 12?
+84
+7.18
+Michael: What's 7 times 8?
+54
+56
+25.17
+Luke: What's 6 times 9?
+54
+13.02
+Michael: What's 6 times 8?
+48
+20.67
+Luke: What's 7 times 9?
+63
+86.67
+Michael: What's 7 times 8?
+56
+22.87
+Luke: What's 6 times 9?
+56
+54
+34.75
+Michael: What's 6 times 8?
+48
+71.13
+Luke: What's 7 times 9?
+63
+9.29
+Michael: What's 7 times 8?
+56
+27.45
+Luke: What's 6 times 9?
+Michael: [(30, (6, 8)), (25.89, (7, 8)), (13.84, (7, 4)), (12.24, (7, 11)), (11.61, (6, 10)), (11.25, (7, 7)), (10.8, (7, 9)), (10.78, (6, 7)), (10.64, (6, 9)), (10.51, (7, 12)), (10.31, (6, 11)), (10.1, (6, 3)), (9.82, (6, 12)), (9.74, (6, 2)), (9.74, (6, 4)), (9.65, (7, 5)), (9.54, (7, 2)), (9.52, (6, 5)), (9.43, (7, 10)), (9.4, (6, 6)), (9.39, (7, 3))]
+Luke: [(16.19, (7, 9)), (10.66, (6, 12)), (10.43, (7, 10)), (10.39, (7, 3)), (10.32, (6, 8)), (9.78, (6, 7)), (9.56, (7, 7)), (9.55, (7, 5)), (9.55, (6, 3)), (9.54, (7, 2)), (9.52, (6, 5)), (9.46, (6, 4)), (9.4, (6, 6)), (9.4, (7, 12)), (9.31, (6, 11)), (9.24, (7, 11)), (9.19, (6, 10)), (8.93, (7, 4)), (8.74, (6, 2)), (8.6, (7, 8))]

@@ -1,0 +1,84 @@
+Abdul: What's 6 times 7?
+42
+13.55
+Veronica: What's 6 times 4?
+24
+2.93
+Abdul: What's 6 times 9?
+84
+54
+12.8
+Veronica: What's 6 times 8?
+48
+8.78
+Abdul: What's 6 times 12?
+72
+4.98
+Veronica: What's 6 times 6?
+36
+2.78
+Abdul: What's 6 times 3?
+18
+5.16
+Veronica: What's 6 times 7?
+42
+2.87
+Abdul: What's 6 times 9?
+54
+13.36
+Veronica: What's 6 times 3?
+18
+9.54
+Abdul: What's 6 times 7?
+42
+2.3
+Veronica: What's 6 times 8?
+48
+38.12
+Abdul: What's 6 times 9?
+52
+53
+54
+25.6
+Veronica: What's 6 times 7?
+42
+26.57
+Abdul: What's 6 times 3?
+18
+2.79
+Veronica: What's 6 times 8?
+48
+4.27
+Abdul: What's 6 times 9?
+54
+3.16
+Veronica: What's 6 times 7?
+42
+5.65
+Abdul: What's 6 times 8?
+48
+6.99
+Veronica: What's 6 times 3?
+18
+5.62
+Abdul: What's 6 times 9?
+54
+3.93
+Veronica: What's 6 times 8?
+48
+12.44
+Abdul: What's 6 times 7?
+42
+4.13
+Veronica: What's 6 times 3?
+18
+4.7
+Abdul: What's 6 times 8?
+48
+4.95
+Veronica: What's 6 times 7?
+42
+13.35
+Abdul: What's 6 times 3?
+Abdul: [7.829458236694336, 7.2053351608323455, 7.267516003714667, 2.932164192199707, 4.983806848526001, 2.779694080352783]
+Veronica: [14.559885289933947, 7.5029347737630205, 12.79508900642395, 2.932164192199707, 4.983806848526001, 2.779694080352783, 14.581209933316266]

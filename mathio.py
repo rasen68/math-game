@@ -7,6 +7,17 @@ from pygame import mixer
 from heap import MaxHeap
 from typing import Callable, Tuple
 
+def strip(original: str) -> str:
+    i = 0
+    new = original
+    while i < len(new):
+        if not new[i].isdigit():
+            new = new[:i] if i == len(new) - 1 else new[:i] + new[i+1:] 
+        else:
+            i+=1
+    print(new)
+    return new
+
 class MathIO:
     def __init__(self):
         self.students = []
@@ -15,8 +26,12 @@ class MathIO:
         self.score = os.path.join(dir, "Untitled-score.ogg")
 
     def setFile(self, fileType: str):
-        self.file = open(os.path.join(os.getcwd(), "tutoring-files", 
-                        fileType, self.students[0] + self.students[1] + ".txt"), "a")
+        if len(self.students) == 1:
+            name = self.students[0] + ".txt"
+        else:
+            name = self.students[0] + self.students[1] + ".txt"
+        self.file = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
+                                      "tutoring-files", fileType, name), "a")
         
     def setOp(self, operation: Callable):
         self.operation = operation
@@ -30,9 +45,10 @@ class MathIO:
 
     def setInput(self) -> int:
         self.students.append(input("Student 1? "))
-        self.students.append(input("Student 2? "))
+        if self.students[0] != "1p":
+            self.students.append(input("Student 2? "))
         self.opStr = ""
-        valid = ["times", "timeshard", "test", "minus", "plus"]
+        valid = ["times", "timeshard", "test", "minus", "plus", "letter"]
         while self.opStr not in valid:
             self.opStr = input("Operation? ")
 
@@ -44,19 +60,18 @@ class MathIO:
         
         self.setFile(self.opStr)
 
-    
     def inputLoop(self, question: str, answer: int):
         start = time.time()
         while True:
             userAnswer = input().strip()
-            if userAnswer == str(answer):
+            if strip(userAnswer) == str(answer):
                 self.file.write(userAnswer + "\n")
                 return time.time() - start
             elif userAnswer == "end":
                 return 0
             elif userAnswer == "":
                 continue
-            elif userAnswer == "q":
+            elif userAnswer == "`":
                 return time.time() - start
             elif userAnswer == "unpause":
                 start = time.time()
@@ -78,7 +93,10 @@ class MathIO:
     def questionAnswer(self, i: Tuple[int, int]):
         first = i[0]
         second = i[1]
-        question = f"{self.getStudent()}: What's {first} {self.opStr} {second}?"
+        if len(self.students) > 1:
+            question = f"{self.getStudent()}: What's {first} {self.opStr} {second}?"
+        else: 
+            question = f"What's {first} {self.opStr} {second}?"
         answer = self.operation(first, second)
 
         print(question)
@@ -87,11 +105,14 @@ class MathIO:
 
         if time == 0: return 0
         self.win()
-        self.switch()
+        if len(self.students) > 1:
+            self.switch()
         self.file.write(str(round(time, 2)) + "\n")
         return time
 
     def end(self, heap1: MaxHeap, heap2: MaxHeap):
         self.file.write(self.students[0] + ": " + str(heap1) + "\n")
-        self.file.write(self.students[1] + ": " + str(heap2))
+        if len(self.students) > 1:
+            self.file.write(self.students[1] + ": " + str(heap2) + "\n")
+        self.file.write("\n")
         self.file.close()

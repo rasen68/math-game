@@ -30,6 +30,7 @@ class MaxHeap:
     def __init__(self, array: List[Node], last2: List[Tuple[int, int]] = [(0, 0), (0, 0)]):
         self.array = [i for i in array]
         self.size = len(array)
+        self.mins = [min(array)]
         MaxHeap.last2 = last2
 
         secondLastLayer = 2 ** (math.floor(math.log2(self.size))) - 2
@@ -72,12 +73,12 @@ class MaxHeap:
     
     def peekMax(self) -> Node:
         if len(self.array) == 0:
-            return None
+            raise LookupError
         return self.array[0]
 
     def peekSecondMax(self) -> Node:
         if len(self.array) <= 1:
-            return None
+            raise LookupError
         if len(self.array) == 2:
             return self.array[1]
         return max(self.array[1], self.array[2])
@@ -149,4 +150,4 @@ class MaxHeap:
             self.downheap(i)
 
     def __str__(self):
-        return str([i.priority for i in self.array])
+        return str([str(i) for i in self.array])

@@ -1,0 +1,411 @@
+Milania: What's 12 times 12?
+144
+3.85
+Addison: What's 12 times 4?
+48
+3.02
+Milania: What's 12 times 10?
+120
+3.78
+Addison: What's 12 times 8?
+96
+3.46
+Milania: What's 12 times 6?
+72
+3.3
+Addison: What's 12 times 3?
+36
+3.17
+Milania: What's 12 times 2?
+24
+2.61
+Addison: What's 12 times 7?
+84
+3.64
+Milania: What's 12 times 9?
+108
+3.91
+Addison: What's 12 times 11?
+132
+4.63
+Milania: What's 12 times 5?
+60
+3.99
+Addison: What's 12 times 9?
+108
+4.84
+Milania: What's 12 times 11?
+132
+2.15
+Addison: What's 12 times 8?
+96
+4.72
+Milania: What's 12 times 9?
+108
+4.21
+Addison: What's 12 times 7?
+84
+6.7
+Milania: What's 12 times 10?
+120
+2.58
+Addison: What's 12 times 11?
+120
+132
+16.58
+Milania: What's 12 times 9?
+108
+3.33
+Addison: What's 12 times 7?
+84
+4.45
+Milania: What's 12 times 4?
+48
+8.57
+Addison: What's 12 times 11?
+132
+5.77
+Milania: What's 12 times 10?
+120
+2.84
+Addison: What's 12 times 8?
+96
+6.58
+Milania: What's 12 times 4?
+48
+4.47
+Addison: What's 12 times 11?
+132
+2.91
+Milania: What's 12 times 12?
+144
+2.4
+Addison: What's 12 times 8?
+96
+3.35
+Milania: What's 12 times 4?
+Milania: [(4.98, (12, 11)), (4.64, (12, 7)), (4.61, (12, 2)), (4.46, (12, 8)), (4.33, (12, 10)), (4.3, (12, 6)), (4.22, (12, 12)), (4.17, (12, 3)), (3.99, (12, 5)), (3.7, (12, 9))]
+Addison: [(5.97, (12, 7)), (5.85, (12, 12)), (5.3, (12, 6)), (5.17, (12, 3)), (5.02, (12, 4)), (4.99, (12, 5)), (4.78, (12, 10)), (4.66, (12, 11)), (4.66, (12, 8)), (4.61, (12, 2)), (4.53, (12, 9))]Milania: What's 8 times 12?
+84
+96
+16.77
+Addison: What's 8 times 9?
+72
+2.65
+Milania: What's 8 times 5?
+40
+4.84
+Addison: What's 8 times 6?
+48
+4.87
+Milania: What's 8 times 11?
+88
+2.5
+Addison: What's 8 times 8?
+64
+2.51
+Milania: What's 8 times 3?
+18
+24
+21.14
+Addison: What's 8 times 7?
+57
+56
+9.96
+Milania: What's 8 times 2?
+16
+2.93
+Addison: What's 8 times 4?
+34
+36
+32
+23.15
+Milania: What's 8 times 10?
+80
+5.53
+Addison: What's 8 times 3?
+36
+24
+9.83
+Milania: What's 8 times 4?
+32
+5.57
+Addison: What's 8 times 12?
+96
+3.24
+Milania: What's 8 times 3?
+24
+8.8
+Addison: What's 8 times 4?
+32
+6.02
+Milania: What's 8 times 12?
+96
+4.3
+Addison: What's 8 times 3?
+24
+5.18
+Milania: What's 8 times 4?
+32
+5.37
+Addison: What's 8 times 7?
+56
+5.4
+Milania: What's 8 times 3?
+24
+4.56
+Addison: What's 8 times 4?
+36
+32
+6.61
+Milania: What's 8 times 7?
+56
+8.07
+Addison: What's 8 times 3?
+24
+5.44
+Milania: What's 8 times 12?
+96
+2.73
+Addison: What's 8 times 4?
+32
+3.75
+Milania: What's 8 times 7?
+56
+7.79
+Addison: What's 8 times 12?
+96
+4.09
+Milania: What's 8 times 4?
+32
+7.42
+Addison: What's 8 times 6?
+48
+7.66
+Milania: What's 8 times 7?
+56
+2.44
+Addison: What's 8 times 3?
+24
+7.6
+Milania: What's 8 times 4?
+36
+32
+5.83
+Addison: What's 8 times 7?
+56
+3.94
+Milania: What's 8 times 3?
+24
+5.38
+Addison: What's 8 times 6?
+48
+6.54
+Milania: What's 8 times 11?
+88
+2.71
+Addison: What's 8 times 3?
+24
+2.25
+Milania: What's 8 times 7?
+56
+4.01
+Addison: What's 8 times 12?
+96
+2.92
+Milania: What's 8 times 4?
+32
+3.54
+Addison: What's 8 times 7?
+56
+7.75
+Milania: What's 8 times 12?
+96
+4.33
+Addison: What's 8 times 4?
+32
+26.01
+Milania: What's 8 times 7?
+56
+2.85
+Addison: What's 8 times 12?
+96
+6.37
+Milania: What's 8 times 3?
+24
+5.16
+Addison: What's 8 times 4?
+32
+7.55
+Milania: What's 8 times 10?
+80
+2.82
+Addison: What's 8 times 6?
+Milania: [(7.31, (8, 11)), (6.79, (8, 3)), (6.51, (8, 8)), (6.28, (8, 7)), (6.21, (8, 12)), (5.93, (8, 2)), (5.87, (8, 6)), (5.84, (8, 5)), (5.65, (8, 9)), (5.59, (8, 4)), (5.06, (8, 10))]
+Addison: [(11.62, (8, 4)), (7.59, (8, 7)), (7.04, (8, 3)), (6.93, (8, 2)), (6.84, (8, 5)), (6.71, (8, 12)), (6.65, (8, 9)), (6.53, (8, 10)), (6.51, (8, 8)), (6.5, (8, 11))]Milania: What's 10 times 2?
+20
+2.82
+Addison: What's 10 times 6?
+60
+2.04
+Milania: What's 10 times 5?
+50
+2.26
+Addison: What's 10 times 11?
+132
+110
+9.22
+Milania: What's 10 times 9?
+90
+1.9
+Addison: What's 10 times 7?
+70
+4.17
+Milania: What's 10 times 10?
+100
+2.5
+Addison: What's 10 times 12?
+121
+132
+120
+10.8
+Milania: What's 10 times 4?
+40
+2.65
+Addison: What's 10 times 3?
+30
+1.87
+Milania: What's 10 times 8?
+80
+2.69
+Addison: What's 10 times 12?
+1220
+120
+5.52
+Milania: What's 10 times 11?
+110
+2.76
+Addison: What's 10 times 7?
+70
+1.6
+Milania: What's 10 times 12?
+120
+2.72
+Addison: What's 10 times 11?
+110
+2.4
+Milania: What's 10 times 7?
+70
+2.19
+Addison: What's 10 times 12?
+121\
+121
+12-0
+120
+10.9
+Milania: What's 10 times 11?
+119
+110
+5.06
+Addison: What's 10 times 3?
+30
+2.61
+Milania: What's 10 times 12?
+120
+3.19
+Addison: What's 10 times 11?
+110
+8.36
+Milania: What's 10 times 9?
+90
+2.43
+Addison: What's 10 times 12?
+120
+5.89
+Milania: What's 10 times 11?
+110
+2.57
+Addison: What's 10 times 6?
+60
+1.73
+Milania: What's 10 times 12?
+120
+2.47
+Addison: What's 10 times 11?
+110
+1.61
+Milania: What's 10 times 4?
+40
+2.5
+Addison: What's 10 times 12?
+129
+120
+7.42
+Milania: What's 10 times 8?
+80
+2.09
+Addison: What's 10 times 11?
+110
+4.19
+Milania: What's 10 times 10?
+100
+3.59
+Addison: What's 10 times 12?
+END
+Milania: [(4.29, (10, 12)), (4.26, (10, 5)), (4.04, (10, 6)), (3.96, (10, 8)), (3.92, (10, 9)), (3.89, (10, 10)), (3.87, (10, 3)), (3.85, (10, 7)), (3.83, (10, 11)), (3.82, (10, 2)), (3.22, (10, 4))]
+Addison: [(4.69, (10, 8)), (4.61, (10, 11)), (4.5, (10, 10)), (4.5, (10, 6)), (4.46, (10, 7)), (4.26, (10, 5)), (4.03, (10, 3)), (3.9, (10, 9)), (3.82, (10, 2)), (3.65, (10, 4))]Milania: What's 9 times 9?
+81
+5.92
+Addison: What's 9 times 8?
+72
+2.71
+Milania: What's 9 times 2?
+-*18
+18
+7.99
+Addison: What's 9 times 11?
+9
+99
+3.98
+Milania: What's 9 times 3?
+27
+11.21
+Addison: What's 9 times 4?
+36
+31.53
+Milania: What's 9 times 6?
+54
+5.54
+Addison: What's 9 times 10?
+90
+2.37
+Milania: What's 9 times 7?
+63
+2.84
+Addison: What's 9 times 5?
+45
+14.4
+Milania: What's 9 times 12?
+108
+5.38
+Addison: What's 9 times 4?
+36
+10.31
+Milania: What's 9 times 5?
+45
+5.57
+Addison: What's 9 times 3?
+27
+8.92
+Milania: What's 9 times 4?
+36
+6.56
+Addison: What's 9 times 5?
+45
+6.67
+Milania: What's 9 times 3?
+27
+11.7
+Addison: What's 9 times 4?
+Milania: [(14.88, (9, 4)), (11.87, (9, 3)), (8.99, (9, 2)), (8.51, (9, 5)), (6.54, (9, 6)), (5.92, (9, 9)), (5.38, (9, 12)), (3.98, (9, 11)), (3.84, (9, 7)), (3.71, (9, 8)), (3.37, (9, 10))]
+Addison: [(9.68, (9, 3)), (9.58, (9, 5)), (7.99, (9, 2)), (7.38, (9, 12)), (5.92, (9, 9)), (5.54, (9, 6)), (3.98, (9, 11)), (3.84, (9, 7)), (3.71, (9, 8)), (3.37, (9, 10))]

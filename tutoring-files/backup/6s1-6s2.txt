@@ -1,0 +1,289 @@
+What's 7 times 6?
+42
+5.62
+What's 8 times 11?
+88
+3.6
+What's 8 times 10?
+80
+3.87
+What's 7 times 8?
+56
+7.16
+What's 7 times 12?
+84
+4.11
+What's 7 times 7?
+49
+4.68
+What's 8 times 2?
+16
+2.76
+What's 7 times 2?
+14
+3.33
+What's 7 times 11?
+77
+2.15
+What's 7 times 10?
+70
+3.85
+What's 8 times 6?
+48
+33.22
+What's 7 times 9?
+63
+22.72
+What's 7 times 5?
+35
+2.91
+What's 7 times 3?
+21
+4.07
+What's 8 times 5?
+40
+7.57
+What's 8 times 8?
+64
+31.04
+What's 8 times 12?
+96
+72.09
+What's 7 times 4?
+28
+6.97
+What's 8 times 3?
+24
+17.22
+What's 8 times 9?
+72
+7.23
+What's 8 times 4?
+32
+11.46
+What's 8 times 12?
+96
+7.39
+What's 8 times 6?
+48
+8.27
+What's 8 times 8?
+64
+9.34
+What's 7 times 9?
+63
+7.73
+What's 8 times 12?
+96
+4.96
+What's 8 times 3?
+24
+4.57
+What's 8 times 8?
+64
+7.27
+What's 8 times 6?
+48
+4.82
+What's 8 times 12?
+96
+3.91
+What's 7 times 9?
+63
+10.48
+What's 8 times 4?
+32
+8.33
+What's 8 times 8?
+64
+4.42
+What's 8 times 3?
+24
+5.3
+What's 7 times 9?
+63
+3.2
+What's 8 times 4?
+32
+6.42
+What's 8 times 9?
+72
+3.9
+What's 8 times 6?
+48
+12.44
+What's 7 times 8?
+56
+36.11
+What's 8 times 12?
+96
+6.29
+What's 8 times 5?
+40
+8.0
+What's 8 times 6?
+64
+48
+41.69
+What's 7 times 8?
+56
+5.68
+What's 8 times 4?
+32
+4.49
+What's 8 times 5?
+40
+4.31
+What's 8 times 6?
+48
+8.05
+What's 7 times 8?
+56
+4.23
+What's 7 times 4?
+28
+19.89
+What's 8 times 3?
+24
+7.43
+What's 8 times 6?
+48
+18.7
+What's 7 times 8?
+56
+8.03
+What's 7 times 4?
+28
+4.25
+What's 7 times 10?
+70
+3.7
+What's 8 times 6?
+48
+12.76
+What's 7 times 8?
+56
+4.76
+What's 8 times 4?
+32
+6.25
+What's 7 times 4?
+28
+4.42
+What's 8 times 6?
+48
+6.02
+What's 8 times 3?
+24
+9.84
+What's 7 times 7?
+49
+25.54
+What's 8 times 8?
+64
+7.62
+What's 8 times 6?
+48
+3.48
+What's 8 times 3?
+24
+7.8
+What's 7 times 7?
+49
+10.89
+What's 8 times 12?
+96
+5.1
+What's 8 times 9?
+72
+5.3
+What's 8 times 3?
+24
+4.32
+What's 7 times 7?
+49
+24.65
+What's 8 times 8?
+64
+4.66
+What's 8 times 9?
+72
+4.74
+What's 8 times 4?
+32
+5.5
+What's 7 times 7?
+49
+4.65
+What's 7 times 8?
+56
+5.36
+What's 7 times 9?
+63
+12.2
+What's 7 times 5?
+35
+3.56
+What's 7 times 7?
+49
+5.67
+What's 8 times 2?
+16
+3.66
+What's 7 times 9?
+63
+8.51
+What's 7 times 8?
+56
+5.83
+What's 7 times 7?
+49
+4.13
+What's 7 times 6?
+42
+4.69
+What's 7 times 9?
+63
+4.86
+What's 8 times 8?
+64
+6.02
+What's 7 times 8?
+54
+56
+103.88
+What's 8 times 4?
+32
+4.29
+What's 8 times 10?
+80
+3.59
+What's 7 times 4?
+28
+9.4
+What's 7 times 8?
+56
+6.4
+What's 7 times 9?
+63
+17.66
+What's 7 times 3?
+21
+4.56
+What's 7 times 4?
+28
+7.26
+What's 7 times 8?
+56
+4.35
+What's 7 times 9?
+63
+3.44
+What's 8 times 12?
+96
+3.92
+What's 7 times 4?
+28
+2.7
+What's 7 times 8?
+[(8.03, (7, 9)), (7.49, (8, 5)), (6.63, (8, 3)), (6.6, (8, 11)), (6.56, (8, 8)), (6.52, (8, 9)), (6.11, (7, 12)), (6.08, (7, 10)), (6.02, (8, 2)), (5.92, (8, 6)), (5.68, (7, 5)), (5.68, (8, 10)), (5.66, (7, 6)), (5.39, (7, 3)), (5.19, (8, 4)), (5.14, (7, 7)), (4.95, (8, 12)), (4.36, (7, 4)), (4.33, (7, 2)), (4.15, (7, 11))]

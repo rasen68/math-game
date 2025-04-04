@@ -1,0 +1,70 @@
+Veronica: What's 4 times 4?
+16
+61.71
+Abdul: What's 4 times 7?
+28
+7.75
+Veronica: What's 4 times 9?
+36
+83.28
+Abdul: What's 4 times 12?
+48
+4.9
+Veronica: What's 4 times 6?
+24
+7.38
+Abdul: What's 4 times 8?
+32
+17.32
+Veronica: What's 4 times 3?
+12
+4.2
+Abdul: What's 4 times 9?
+36
+9.06
+Veronica: What's 4 times 4?
+16
+2.99
+Abdul: What's 4 times 3?
+12
+4.04
+Veronica: What's 4 times 9?
+36
+4.12
+Abdul: What's 4 times 7?
+28
+4.3
+Veronica: What's 4 times 4?
+16
+3.42
+Abdul: What's 4 times 9?
+36
+13.96
+Veronica: What's 4 times 8?
+28
+32
+28.29
+Abdul: What's 4 times 7?
+28
+4.83
+Veronica: What's 4 times 9?
+36
+6.5
+Abdul: What's 4 times 3?
+12
+2.46
+Veronica: What's 4 times 8?
+32
+7.02
+Abdul: What's 4 times 9?
+36
+4.63
+Veronica: What's 4 times 7?
+28
+3.19
+Abdul: What's 4 times 3?
+12
+3.07
+Veronica: What's 4 times 8?
+Veronica: [14.333487351735434, 14.300522804260254, 6.212007125218709, 4.901742696762085, 7.375911712646484, 4.196178436279297]
+Abdul: [11.690917332967123, 7.035143984688653, 61.707194805145264, 4.901742696762085, 7.375911712646484, 20.322774648666382, 5.213489179257994]

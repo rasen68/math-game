@@ -1,0 +1,298 @@
+What's 6 times 11?
+66
+4.23
+What's 6 times 10?
+61
+60
+7.48
+What's 6 times 7?
+42
+12.34
+What's 6 times 9?
+54
+10.09
+What's 6 times 8?
+48
+10.93
+What's 6 times 12?
+72
+21.0
+What's 6 times 6?
+36
+6.14
+What's 6 times 2?
+12
+4.91
+What's 6 times 5?
+30
+6.26
+What's 6 times 3?
+18
+8.5
+What's 6 times 4?
+24
+8.23
+What's 6 times 12?
+72
+4.15
+What's 6 times 7?
+48
+42
+26.62
+What's 6 times 8?
+48
+27.88
+What's 6 times 9?
+54
+26.56
+What's 6 times 12?
+72
+5.03
+What's 6 times 7?
+[(22.23, (6, 8)), (21.07, (6, 9)), (9.5, (6, 3)), (8.48, (6, 10)), (8.23, (6, 4)), (7.14, (6, 6)), (6.61, (6, 12)), (6.26, (6, 5)), (5.91, (6, 2)), (4.23, (6, 11))]
+Aaron6: What's 7 times 7?
+488
+48
+47
+49
+61.1
+Micah6: What's 7 times 4?
+28
+8.07
+Aaron6: What's 7 times 12?
+84
+43.7
+Micah6: What's 7 times 5?
+35
+7.6
+Aaron6: What's 7 times 9?
+61
+63
+72.21
+Micah6: What's 7 times 3?
+21
+9.16
+Aaron6: What's 7 times 2?
+14
+2.82
+Micah6: What's 7 times 8?
+56
+46.07
+Aaron6: What's 7 times 11?
+77
+5.85
+Micah6: What's 7 times 10?
+70
+7.78
+Aaron6: What's 7 times 6?
+42
+53.35
+Micah6: What's 7 times 9?
+83
+63
+79.69
+Aaron6: What's 7 times 7?
+42
+49
+28.98
+Micah6: What's 7 times 8?
+56
+29.04
+Aaron6: What's 7 times 12?
+84
+30.79
+Micah6: What's 7 times 6?
+42
+70.49
+Aaron6: What's 7 times 9?
+63
+5.63
+Micah6: What's 7 times 7?
+49
+46.2
+Aaron6: What's 7 times 8?
+56
+5.06
+Micah6: What's 7 times 12?
+84
+20.54
+Aaron6: What's 7 times 6?
+42
+9.49
+Micah6: What's 7 times 9?
+56
+63
+97.06
+Aaron6: What's 7 times 7?
+49
+9.7
+Micah6: What's 7 times 8?
+56
+26.75
+Aaron6: What's 7 times 12?
+84
+5.27
+Micah6: What's 7 times 6?
+42
+27.9
+Aaron6: What's 7 times 9?
+63
+13.72
+Micah6: What's 7 times 7?
+49
+33.78
+Aaron6: What's 7 times 8?
+56
+5.98
+Micah6: What's 7 times 12?
+84
+30.57
+Aaron6: What's 7 times 6?
+63
+42
+7.68
+Micah6: What's 7 times 9?
+56
+63
+66.9
+Aaron6: What's 7 times 7?
+49
+11.07
+Micah6: What's 7 times 6?
+42
+12.19
+Aaron6: What's 7 times 12?
+84
+2.82
+Micah6: What's 7 times 8?
+56
+66.39
+Aaron6: What's 7 times 9?
+63
+20.87
+Micah6: What's 7 times 7?
+49
+17.37
+Aaron6: What's 7 times 6?
+43
+42
+13.35
+Micah6: What's 7 times 12?
+84
+38.32
+Aaron6: What's 7 times 3?
+21
+6.13
+Micah6: What's 7 times 9?
+63
+65.68
+Aaron6: What's 7 times 7?
+49
+8.93
+Micah6: What's 7 times 8?
+56
+16.09
+Aaron6: What's 7 times 6?
+42
+8.23
+Micah6: What's 7 times 12?
+84
+20.21
+Aaron6: What's 7 times 9?
+63
+4.12
+Micah6: What's 7 times 7?
+49
+10.0
+Aaron6: What's 7 times 8?
+56
+3.56
+Micah6: What's 7 times 6?
+42
+11.01
+Aaron6: What's 7 times 4?
+28
+7.53
+Micah6: What's 7 times 9?
+63
+90.37
+Aaron6: What's 7 times 7?
+49
+4.04
+Micah6: What's 7 times 12?
+84
+33.45
+Aaron6: What's 7 times 6?
+42
+5.3
+Micah6: What's 7 times 8?
+56
+20.24
+Aaron6: What's 7 times 5?
+35
+19.18
+Micah6: What's 7 times 9?
+63
+29.56
+Aaron6: What's 7 times 10?
+70
+3.02
+Micah6: What's 7 times 12?
+84
+17.55
+Aaron6: What's 7 times 3?
+21
+8.91
+Micah6: What's 7 times 8?
+65
+56
+30.27
+Aaron6: What's 7 times 5?
+335
+353
+35
+11.33
+Micah6: What's 7 times 9?
+64
+62
+63
+80.72
+Aaron6: What's 7 times 4?
+21
+283
+28
+27.89
+Micah6: What's 7 times 12?
+84
+14.51
+Aaron6: What's 7 times 3?
+21
+4.65
+Micah6: What's 7 times 8?
+56
+8.17
+Aaron6: What's 7 times 5?
+35
+12.11
+Micah6: What's 7 times 9?
+63
+23.46
+Aaron6: What's 7 times 4?
+28
+4.75
+Micah6: What's 7 times 12?
+83
+82
+84
+63.36
+Aaron6: What's 7 times 11?
+77
+4.22
+Micah6: What's 7 times 7?
+56
+42
+49
+56.36
+Aaron6: What's 7 times 5?
+Aaron6: [(10.44, (7, 9)), (10.4, (7, 4)), (8.12, (7, 8)), (7.82, (7, 2)), (7.39, (7, 12)), (7.39, (7, 3)), (7.07, (7, 6)), (6.45, (7, 7)), (5.77, (7, 11)), (5.28, (7, 10))]
+Micah6: [(30, (7, 12)), (30, (7, 7)), (25.64, (7, 9)), (14.89, (7, 8)), (14.33, (7, 6)), (12.6, (7, 5)), (12.07, (7, 4)), (10.16, (7, 3)), (9.85, (7, 11)), (8.78, (7, 10)), (5.82, (7, 2))]

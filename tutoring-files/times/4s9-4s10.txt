@@ -1,0 +1,536 @@
+What's 9 times 4?
+36
+28.59
+What's 9 times 7?
+63
+4.7
+What's 9 times 10?
+909
+90
+12.78
+What's 9 times 9?
+81
+6.55
+What's 9 times 8?
+71
+770
+72
+52.21
+What's 9 times 6?
+54
+36.63
+What's 9 times 12?
+1=7
+107
+192
+191
+109
+118
+108
+260.11
+What's 9 times 5?
+45
+6.59
+What's 9 times 2?
+18
+8.96
+What's 9 times 3?
+27
+6.27
+What's 9 times 11?
+99
+5.86
+What's 9 times 12?
+108
+8.01
+What's 9 times 8?
+72
+9.65
+What's 9 times 6?
+51
+54
+63.12
+What's 9 times 4?
+35
+32
+36
+147.33
+What's 9 times 12?
+108
+4.52
+What's 9 times 8?
+72
+3.47
+What's 9 times 6?
+54
+11.18
+What's 9 times 4?
+30
+31
+36
+38.75
+What's 9 times 10?
+90
+2.95
+What's 9 times 12?
+108
+5.41
+What's 9 times 6?
+54
+2.48
+What's 9 times 4?
+36
+9.87
+What's 9 times 2?
+18
+4.09
+What's 9 times 9?
+81
+3.07
+What's 9 times 8?
+71
+72
+31.33
+What's 9 times 4?
+36
+3.99
+What's 9 times 12?
+108
+7.59
+What's 9 times 2?
+18
+7.13
+What's 9 times 8?
+72
+4.26
+What's 9 times 6?
+36
+63
+57
+54
+89.44
+What's 9 times 10?
+90
+12.23
+What's 9 times 3?
+27
+3.7
+What's 9 times 8?
+72
+35.35
+What's 9 times 6?
+63
+34
+64
+34
+54
+121.25
+What's 9 times 10?
+90
+7.07
+What's 9 times 2?
+18
+3.55
+What's 9 times 8?
+72
+1.91
+What's 9 times 6?
+54
+4.78
+What's 9 times 5?
+45
+4.24
+What's 9 times 10?
+90
+2.26
+What's 9 times 8?
+72
+1.73
+What's 9 times 6?
+54
+3.54
+What's 9 times 12?
+108
+5.09
+What's 9 times 4?
+36
+5.85
+What's 9 times 11?
+99
+2.65
+What's 9 times 2?
+18
+2.44
+What's 9 times 9?
+81
+19.57
+What's 9 times 4?
+36
+2.61
+What's 9 times 7?
+63
+3.23
+What's 9 times 3?
+27
+3.03
+What's 9 times 9?
+811
+81
+11.1
+What's 9 times 6?
+54
+4.98
+What's 9 times 5?
+45
+6.17
+What's 9 times 8?
+72
+22.81
+What's 9 times 9?
+81
+3.66
+What's 9 times 6?
+54
+8.1
+What's 9 times 5?
+[(17.45, (9, 8)), (9.04, (9, 6)), (6.64, (9, 9)), (6.41, (9, 12)), (5.3, (9, 10)), (4.72, (9, 7)), (4.43, (9, 3)), (4.38, (9, 11)), (4.28, (9, 4)), (4.15, (9, 2))]4s9: What's 9 times 3?
+27
+30.98
+4s10: What's 9 times 12?
+108
+30.93
+4s9: What's 9 times 4?
+46
+36
+62.14
+4s10: What's 9 times 8?
+71
+70
+72
+321.11
+4s9: What's 9 times 6?
+54
+13.78
+4s10: What's 9 times 7?
+623
+63
+50.86
+4s9: What's 9 times 9?
+81
+6.1
+4s10: What's 9 times 8?
+72
+6.57
+4s9: What's 9 times 4?
+27
+36
+13.24
+4s10: What's 9 times 7?
+63
+8.96
+4s9: What's 9 times 8?
+72
+7.54
+4s10: What's 9 times 4?
+36
+48.95
+4s9: What's 9 times 7?
+63
+7.77
+4s10: What's 9 times 3?
+27
+20.59
+4s9: What's 9 times 8?
+72
+4.02
+4s10: What's 9 times 4?
+63
+36
+13.98
+4s9: What's 9 times 3?
+27
+6.77
+4s10: What's 9 times 12?
+108
+9.39
+4s9: What's 9 times 4?
+27
+36
+11.56
+4s10: What's 9 times 8?
+72
+7.19
+4s9: What's 9 times 12?
+108
+7.49
+4s10: What's 9 times 3?
+27
+30.09
+4s9: What's 9 times 7?
+63
+6.24
+4s10: What's 9 times 4?
+36
+14.29
+4s9: What's 9 times 3?
+36
+27
+10.66
+4s10: What's 9 times 7?
+63
+30.97
+4s9: What's 9 times 4?
+36
+9.25
+4s10: What's 9 times 3?
+27
+22.19
+4s9: What's 9 times 12?
+108
+5.38
+4s10: What's 9 times 7?
+63
+26.75
+4s9: What's 9 times 8?
+72
+6.82
+4s10: What's 9 times 3?
+27
+14.02
+4s9: What's 9 times 6?
+54
+6.5
+4s10: What's 9 times 7?
+63
+23.11
+4s9: What's 9 times 3?
+36
+27
+10.28
+4s10: What's 9 times 12?
+108
+6.13
+4s9: What's 9 times 7?
+63
+7.58
+4s10: What's 9 times 3?
+27
+8.1
+4s9: What's 9 times 4?
+36
+9.27
+4s10: What's 9 times 7?
+63
+4.76
+4s9: What's 9 times 9?
+81
+4.76
+4s10: What's 9 times 6?
+54
+250.48
+4s9: What's 9 times 3?
+27
+20.04
+4s10: What's 9 times 9?
+81
+4.45
+4s9: What's 9 times 12?
+108
+4.47
+4s10: What's 9 times 6?
+54
+6.23
+4s9: What's 9 times 3?
+27
+5.41
+4s10: What's 9 times 8?
+72
+8.35
+4s9: What's 9 times 7?
+63
+10.36
+4s10: What's 9 times 4?
+36
+6.37
+4s9: What's 9 times 8?
+4s9: [(12.0, (9, 4)), (11.26, (9, 6)), (10.91, (9, 7)), (10.47, (9, 3)), (9.88, (9, 12)), (9.87, (9, 9))]
+4s10: [(14.28, (9, 12)), (14.16, (9, 6)), (13.67, (9, 3)), (13.37, (9, 7)), (12.5, (9, 8)), (12.0, (9, 9)), (10.94, (9, 4))]4s9: What's 6 times 3?
+18
+12.86
+4s10: What's 6 times 4?
+24
+13.35
+4s9: What's 6 times 7?
+56
+42
+26.5
+4s10: What's 6 times 11?
+66
+5.33
+4s9: What's 6 times 2?
+12
+4.36
+4s10: What's 6 times 6?
+36
+31.74
+4s9: What's 6 times 8?
+48
+23.87
+4s10: What's 6 times 5?
+30
+7.02
+4s9: What's 6 times 10?
+60
+4.31
+4s10: What's 6 times 9?
+54
+11.85
+4s9: What's 6 times 12?
+72
+16.24
+4s10: What's 6 times 6?
+36
+36.41
+4s9: What's 6 times 7?
+42
+27.22
+4s10: What's 6 times 8?
+56
+48
+35.43
+4s9: What's 6 times 6?
+36
+4.33
+4s10: What's 6 times 4?
+24
+11.36
+4s9: What's 6 times 7?
+42
+4.24
+4s10: What's 6 times 6?
+36
+16.11
+4s9: What's 6 times 8?
+48
+43.43
+4s10: What's 6 times 7?
+42
+6.8
+4s9: What's 6 times 12?
+72
+19.42
+4s10: What's 6 times 8?
+48
+5.9
+4s9: What's 6 times 6?
+36
+4.02
+4s10: What's 6 times 12?
+722
+72
+12.86
+4s9: What's 6 times 8?
+48
+7.96
+4s10: What's 6 times 6?
+36
+4.04
+4s9: What's 6 times 12?
+72
+5.5
+4s10: What's 6 times 4?
+34
+37
+24
+53.64
+4s9: What's 6 times 7?
+42
+11.61
+4s10: What's 6 times 12?
+72
+4.94
+4s9: What's 6 times 4?
+24
+10.35
+4s10: What's 6 times 8?
+48
+5.58
+4s9: What's 6 times 9?
+50
+54
+53.55
+4s10: What's 6 times 4?
+24
+6.09
+4s9: What's 6 times 3?
+4s9: [30, 15.351113478342691, 14.682276098816482, 7.0200605392456055, 15.3064866065979, 11.449810266494751, 4.35779070854187, 5.328605651855469, 4.314268350601196, 9.16743999057346, 12.8606858253479]
+4s10: [14.863499720891317, 14.85227370262146, 12.8606858253479, 7.0200605392456055, 14.060194492340088, 10.365381611718071, 4.35779070854187, 5.328605651855469, 4.314268350601196, 10.120540062586466, 12.606205410427517]4s9: What's 12 times 2?
+24
+7.99
+4s10: What's 12 times 7?
+84
+25.61
+4s9: What's 12 times 8?
+91
+96
+85.28
+4s10: What's 12 times 5?
+60
+10.27
+4s9: What's 12 times 3?
+34
+36
+36.89
+4s10: What's 12 times 12?
+108
+144
+61.02
+4s9: What's 12 times 9?
+108
+5.13
+4s10: What's 12 times 11?
+132
+53.65
+4s9: What's 12 times 4?
+48
+13.12
+4s10: What's 12 times 6?
+72
+21.21
+4s9: What's 12 times 10?
+120
+12.8
+4s10: What's 12 times 8?
+98
+97
+96
+98.84
+4s9: What's 12 times 12?
+144
+3.45
+4s10: What's 12 times 11?
+132
+49.82
+4s9: What's 12 times 8?
+96
+5.5
+4s10: What's 12 times 12?
+144
+3.7
+4s9: What's 12 times 11?
+132
+5.34
+4s10: What's 12 times 3?
+132
+44
+36
+55.4
+4s9: What's 12 times 8?
+96
+6.52
+4s10: What's 12 times 11?
+132
+14.87
+4s9: What's 12 times 3?
+4s9: [36.888516902923584, 25.64162850379944, 12.803913116455078, 15.846661726633707, 25.606656312942505, 7.993629217147827, 5.131992340087891, 10.272807598114014, 13.124630451202393, 21.20538902282715, 22.942992448806763]
+4s10: [31.5, 30, 12.803913116455078, 25.606656312942505, 25.80843249956767, 7.993629217147827, 5.131992340087891, 10.272807598114014, 13.124630451202393, 21.20538902282715, 21.916505654652912]

@@ -12,6 +12,11 @@ def minus(first: int, second: int) -> int:
 def plus(first: int, second: int) -> int:
     return first + second
 
+def letter(first: str, second: str) -> str:
+    o1 = ord(first) - ord('a') + 1
+    o2 = ord(second) - ord('a') + 1
+    return chr(ord('a') + o1 + o2 - 1)
+
 def seedShuffle(seed: int, allNums: List[Tuple[int, int]]) -> List[Tuple[int, int]]:
     shuffled = []
     tempSeed = seed
@@ -46,7 +51,7 @@ def processQuestion(io: MathIO, heap: MaxHeap, question: Node):
         return 0
     
     average = (t2 * 2 + question.priority) / 3
-    if average > 30: average = 30
+    if average > 20: average = 20
     newQuestion = Node(average, question.data)
 
     heap.insert(newQuestion)
@@ -59,9 +64,9 @@ def drill(io: MathIO, heaps: Tuple[MaxHeap]):
         if processQuestion(io, whichHeap, question) == 0:
             break
 
-        # + 1.5 seconds to fastest question
+        # + 1 second to last question (not necessarily fastest... for now)
         last = whichHeap.size - 1
-        whichHeap.update(last, whichHeap.array[last].priority + 1.5)
+        whichHeap.update(last, whichHeap.array[last].priority + 1)
         whichHeap = heaps[io.which]
 
     io.end(heaps[0], heaps[1])
@@ -69,25 +74,25 @@ def drill(io: MathIO, heaps: Tuple[MaxHeap]):
 def makeAddition(nums: List[int]) -> List[Tuple[int, int]]:
     dict = NumsDict()
     allNums = []
-    for i in nums:
-        if i == 1:
+    for j in nums:
+        if j == 1:
             allNums += dict.makeQuestions([1], range(1, 11))
-        elif i == 2:
+        elif j == 2:
             allNums += dict.makeQuestions([2], range(2, 11))
-        elif i == 8:
+        elif j == 8:
             allNums += dict.makeQuestions([8], range(1, 9))
-        elif i == 9:
+        elif j == 9:
             allNums += dict.makeQuestions([9], range(1, 10))
-        elif i == 10:
+        elif j == 10:
             allNums += dict.makeQuestions([], extras=[(i, 10-i) for i in range(1, 6)])
-        elif i == -1:
+        elif j == -1:
             allNums += dict.makeQuestions([3], range(3, 7), [(4, 4), (4, 5)])
-        elif i == 11:
+        elif j == 11:
             allNums += dict.makeQuestions([7], range(4, 8), [(5, 6), (6, 6)])
-        elif i == 22:
+        elif j == 22:
             allNums += dict.makeQuestions([], extras=[(i, i) for i in range(1, 11)])
         else:
-            allNums += dict.makeQuestions([i], range(2, 10))
+            allNums += dict.makeQuestions([j], range(2, 10))
     return allNums
 
 def makeSubtraction(nums: List[int]) -> List[Tuple[int, int]]:
@@ -113,6 +118,16 @@ def makeTimesTablesHard(nums: List[int]) -> List[Tuple[int, int]]:
         extras.append((11, 10))
         extras.append((11, 11))
     return dict.makeQuestions(nums, lis, extras)
+
+def makeLetter(nums: List[str]) -> List[Tuple[str, str]]:
+    dict = NumsDict()
+    allNums = []
+    for i in nums:
+        if i == 'aa':
+            allNums += dict.makeQuestions([], extras=[(chr(ord('a') + j), chr(ord('a') + j)) for j in range(0, 13)])
+        else:
+            allNums += dict.makeQuestions([i], [chr(ord('a') + j) for j in range(0, ord('z') - ord(i))])
+    return allNums
 
 def setOpStr(io: MathIO) -> List[Tuple[int, int]]:
     if (io.opStr == 'timeshard'):
@@ -141,7 +156,13 @@ def setOpStr(io: MathIO) -> List[Tuple[int, int]]:
         print()
 
         return makeAddition(tables)
-    
+    elif (io.opStr == 'letter'):
+        io.opStr = 'plus'
+        io.setOp(letter)
+        tables = [i for i in input("Addition tables? ").split()]
+        print()
+
+        return makeLetter(tables)
     else:
         raise ValueError
 

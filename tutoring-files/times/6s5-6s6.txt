@@ -1,0 +1,257 @@
+6s5: What's 4 times 2?
+8
+7.99
+6s6: What's 4 times 4?
+16
+13.84
+6s5: What's 4 times 8?
+16
+24
+32
+65.56
+6s6: What's 4 times 6?
+24
+7.47
+6s5: What's 4 times 12?
+48
+15.23
+6s6: What's 4 times 9?
+38
+36
+143.98
+6s5: What's 4 times 5?
+20
+7.02
+6s6: What's 4 times 7?
+28
+9.65
+6s5: What's 4 times 11?
+44
+3.18
+6s6: What's 4 times 3?
+12
+8.48
+6s5: What's 4 times 10?
+40
+5.35
+6s6: What's 4 times 9?
+36
+26.21
+6s5: What's 4 times 8?
+24
+32
+37.49
+6s6: What's 4 times 12?
+48
+24.3
+6s5: What's 4 times 9?
+36
+30.0
+6s6: What's 4 times 8?
+32
+12.93
+6s5: What's 4 times 12?
+48
+22.83
+6s6: What's 4 times 9?
+36
+58.28
+6s5: What's 4 times 8?
+26
+32
+64.49
+6s6: What's 4 times 12?
+48
+40.36
+6s5: What's 4 times 9?
+36
+47.64
+6s6: What's 4 times 8?
+32
+17.73
+6s5: What's 4 times 12?
+48
+4.05
+6s6: What's 4 times 9?
+36
+41.03
+6s5: What's 4 times 8?
+32
+21.84
+6s6: What's 4 times 12?
+46
+44
+48
+74.36
+6s5: What's 4 times 9?
+36
+10.85
+6s6: What's 4 times 8?
+32
+16.37
+6s5: What's 4 times 4?
+16
+8.62
+6s6: What's 4 times 12?
+36
+42
+48
+164.07
+6s5: What's 4 times 8?
+32
+7.39
+6s6: What's 4 times 9?
+36
+12.1
+6s5: What's 4 times 4?
+16
+4.45
+6s6: What's 4 times 12?
+48
+24.52
+6s5: What's 4 times 9?
+32
+36
+17.05
+6s6: What's 4 times 8?
+32
+16.89
+6s5: What's 4 times 7?
+28
+26.68
+6s6: What's 4 times 12?
+48
+5.53
+6s5: What's 4 times 9?
+32
+36
+10.95
+6s6: What's 4 times 8?
+32
+12.98
+6s5: What's 4 times 7?
+28
+11.97
+6s6: What's 4 times 9?
+36
+37.08
+6s5: What's 4 times 8?
+32
+8.73
+6s6: What's 4 times 4?
+16
+8.55
+6s5: What's 4 times 7?
+28
+10.59
+6s6: What's 4 times 9?
+32
+36
+11.55
+6s5: What's 4 times 10?
+40
+4.91
+6s6: What's 4 times 12?
+48
+12.34
+6s5: What's 4 times 7?
+28
+5.48
+6s6: What's 4 times 9?
+36
+10.42
+6s5: What's 4 times 3?
+12
+9.79
+6s6: What's 4 times 8?
+32
+7.58
+6s5: What's 4 times 9?
+36
+8.79
+6s6: What's 4 times 12?
+36
+48
+16.38
+6s5: What's 4 times 8?
+32
+4.55
+6s6: What's 4 times 9?
+36
+4.87
+6s5: What's 4 times 12?
+48
+5.46
+6s6: What's 4 times 2?
+8
+3.92
+6s5: What's 4 times 11?
+44
+3.35
+6s6: What's 4 times 12?
+38
+48
+19.21
+6s5: What's 4 times 7?
+28
+6.77
+6s6: What's 4 times 3?
+12
+9.57
+6s5: What's 4 times 4?
+16
+6.34
+6s6: What's 4 times 12?
+48
+4.17
+6s5: What's 4 times 6?
+28
+24
+26.08
+6s6: What's 4 times 10?
+40
+4.26
+6s5: What's 4 times 3?
+12
+13.5
+6s6: What's 4 times 5?
+32
+20
+32.08
+6s5: What's 4 times 6?
+28
+24
+35.24
+6s6: What's 4 times 8?
+32
+12.74
+6s5: What's 4 times 3?
+12
+6.81
+6s6: What's 4 times 5?
+25
+20
+18.52
+6s5: What's 4 times 6?
+28
+24
+10.53
+6s6: What's 4 times 8?
+32
+10.87
+6s5: What's 4 times 9?
+48
+36
+24.14
+6s6: What's 4 times 5?
+20
+5.25
+6s5: What's 4 times 6?
+24
+4.48
+6s6: What's 4 times 7?
+28
+16.36
+6s5: What's 4 times 9?
+6s5: [(11.06, (4, 10)), (10.99, (4, 2)), (10.46, (4, 12)), (10.19, (4, 7)), (10.06, (4, 3)), (10.02, (4, 5)), (9.96, (4, 11)), (9.87, (4, 8)), (9.73, (4, 4)), (9.66, (4, 6))]
+6s6: [(14.79, (4, 7)), (13.47, (4, 6)), (11.87, (4, 3)), (11.78, (4, 12)), (11.52, (4, 9)), (11.48, (4, 5)), (11.4, (4, 8)), (11.31, (4, 4)), (11.29, (4, 10)), (11.18, (4, 11)), (10.94, (4, 2))]

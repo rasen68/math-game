@@ -1,0 +1,314 @@
+What's d plus d?
+h
+4.14
+What's l plus l?
+z
+x
+6.41
+What's e plus e?
+j
+1.94
+What's m plus m?
+z
+1.47
+What's f plus f?
+l
+2.21
+What's g plus g?
+n
+4.03
+What's k plus k?
+s
+r
+t
+q
+w
+v
+31.65
+What's j plus j?
+t
+3.42
+What's h plus h?
+p
+12.43
+What's c plus c?
+f
+4.84
+What's b plus b?
+d
+1.73
+What's i plus i?
+r
+5.44
+What's k plus k?
+v
+9.44
+What's h plus h?
+p
+1.72
+What's l plus l?
+x
+6.05
+What's k plus k?
+w
+v
+3.58
+What's d plus d?
+h
+8.32
+What's h plus h?
+p
+2.24
+What's k plus k?
+t
+w
+v
+10.52
+What's d plus d?
+h
+4.13
+What's l plus l?
+y
+vv
+v
+v
+x
+24.78
+What's k plus k?
+v
+2.93
+What's d plus d?
+h
+3.24
+What's l plus l?
+x
+1.56
+What's h plus h?
+p
+7.43
+What's k plus k?
+v
+1.29
+What's d plus d?
+h
+1.42
+What's l plus l?
+x
+1.16
+What's h plus h?
+p
+1.99
+What's i plus i?
+r
+5.01
+What's k plus k?
+v
+1.62
+What's h plus h?
+x
+p
+1.57
+What's i plus i?
+r
+7.3
+What's d plus d?
+h
+0.95
+What's h plus h?
+p
+1.25
+What's i plus i?
+r
+1.21
+What's c plus c?
+f
+1.76
+What's k plus k?
+v
+1.52
+What's l plus l?
+x
+1.66
+What's i plus i?
+r
+3.0
+What's c plus c?
+f
+1.45
+What's h plus h?
+p
+2.04
+What's i plus i?
+r
+2.33
+What's l plus l?
+x
+3.08
+What's h plus h?
+p
+1.38
+What's i plus i?
+r
+1.55
+What's l plus l?
+x
+1.61
+What's k plus k?
+v
+3.23
+What's i plus i?
+r
+2.39
+What's l plus l?
+x
+1.41
+What's k plus k?
+v
+2.32
+What's i plus i?
+r
+6.33
+What's l plus l?
+x
+1.58
+What's k plus k?
+v
+2.44
+What's i plus i?
+x
+v
+r
+5.76
+What's h plus h?
+p
+2.91
+What's k plus k?
+v
+3.27
+What's i plus i?
+r
+2.26
+What's h plus h?
+p
+3.15
+What's k plus k?
+v
+2.42
+What's i plus i?
+r
+2.34
+What's h plus h?
+p
+0.97
+What's k plus k?
+v
+1.38
+What's i plus i?
+r
+0.99
+What's l plus l?
+x
+1.66
+What's k plus k?
+v
+1.88
+What's g plus g?
+n
+3.34
+What's l plus l?
+x
+1.46
+What's k plus k?
+v
+4.93
+What's g plus g?
+n
+1.7
+What's l plus l?
+x
+1.24
+What's k plus k?
+v
+1.86
+What's g plus g?
+n
+1.28
+What's l plus l?
+x
+3.12
+What's k plus k?
+v
+1.56
+What's h plus h?
+p
+1.31
+What's l plus l?
+x
+1.07
+What's k plus k?
+v
+1.53
+What's c plus c?
+f
+2.12
+What's l plus l?
+1p: [4.214955100306758, 3.836065758402946, 3.8618287600052437, 3.729291840196337, 3.68104094193642, 3.8414800450962017, 1.9410173892974854, 3.4168918132781982, 1.4667174816131592, 2.21118426322937, 1.732043981552124, 3.7929271945246943]
+What's z plus z?
+pass
+13.99
+What's y plus a?
+z
+1.21
+What's u plus a?
+t
+v
+4.81
+What's t plus f?
+z
+2.18
+What's x plus b?
+z
+1.68
+What's t plus e?
+y
+2.12
+What's w plus c?
+z
+4.26
+What's t plus a?
+u
+1.81
+What's w plus a?
+x
+2.69
+What's t plus d?
+y
+z
+w
+x
+13.62
+What's t plus c?
+w
+1.51
+What's w plus b?
+y
+1.81
+What's u plus c?
+x
+5.05
+What's u plus d?
+y
+5.13
+What's v plus a?
+w
+1.62
+What's x plus a?
+y
+2.45
+What's t plus b?
+v
+3.46
+What's y plus a?
+z
+6.1
+What's u plus b?

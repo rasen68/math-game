@@ -1,0 +1,206 @@
+Tristan: What's 12 times 6?
+72
+57.69
+Abu: What's 12 times 7?
+84
+43.26
+Tristan: What's 12 times 9?
+93
+108
+68.93
+Abu: What's 12 times 8?
+96
+8.99
+Tristan: What's 12 times 5?
+60
+26.31
+Abu: What's 12 times 4?
+48
+5.46
+Tristan: What's 12 times 3?
+36
+12.02
+Abu: What's 12 times 11?
+132
+5.48
+Tristan: What's 12 times 10?
+120
+18.51
+Abu: What's 12 times 12?
+144
+3.69
+Tristan: What's 12 times 2?
+24
+12.23
+Abu: What's 12 times 9?
+108
+4.23
+Tristan: What's 12 times 6?
+72
+23.76
+Abu: What's 12 times 7?
+84
+4.46
+Tristan: What's 12 times 9?
+1008
+108
+13.78
+Abu: What's 12 times 6?
+72
+4.88
+Tristan: What's 12 times 7?
+84
+23.86
+Abu: What's 12 times 9?
+108
+3.8
+Tristan: What's 12 times 6?
+72
+7.39
+Abu: What's 12 times 5?
+60
+4.03
+Tristan: What's 12 times 9?
+108
+5.07
+Abu: What's 12 times 6?
+72
+5.02
+Tristan: What's 12 times 7?
+84
+8.25
+Abu: What's 12 times 10?
+120
+3.97
+Tristan: What's 12 times 5?
+60
+4.16
+Abu: What's 12 times 7?
+84
+6.08
+Tristan: What's 12 times 10?
+60
+120
+15.87
+Abu: What's 12 times 9?
+108
+4.14
+Tristan: What's 12 times 7?
+84
+4.13
+Abu: What's 12 times 3?
+36
+3.69
+Tristan: What's 12 times 10?
+120
+3.21
+Abu: What's 12 times 2?
+24
+2.23
+Tristan: What's 12 times 6?
+72
+3.31
+Abu: What's 12 times 5?
+60
+2.91
+Tristan: What's 12 times 9?
+108
+5.63
+Abu: What's 12 times 6?
+72
+4.05
+Tristan: What's 12 times 3?
+36
+7.73
+Abu: What's 12 times 8?
+96
+4.38
+Tristan: What's 12 times 2?
+24
+6.92
+Abu: What's 12 times 12?
+144
+2.4
+Tristan: What's 12 times 5?
+60
+2.64
+Abu: What's 12 times 10?
+120
+2.92
+Tristan: What's 12 times 12?
+144
+3.4
+Abu: What's 12 times 4?
+48
+3.44
+Tristan: What's 12 times 8?
+98
+97
+96
+31.27
+Abu: What's 12 times 7?
+84
+5.54
+Tristan: What's 12 times 10?
+60
+120
+14.63
+Abu: What's 12 times 6?
+72
+6.68
+Tristan: What's 12 times 8?
+56
+96
+12.91
+Abu: What's 12 times 2?
+24
+3.9
+Tristan: What's 12 times 10?
+120
+4.07
+Abu: What's 12 times 11?
+132
+9.14
+Tristan: What's 12 times 8?
+96
+4.77
+Abu: What's 12 times 9?
+108
+5.55
+Tristan: What's 12 times 11?
+132
+4.21
+Abu: What's 12 times 2?
+24
+2.62
+Tristan: What's 12 times 9?
+84
+108
+6.55
+Abu: What's 12 times 11?
+132
+5.35
+Tristan: What's 12 times 5?
+60
+3.05
+Abu: What's 12 times 4?
+48
+3.59
+Tristan: What's 12 times 8?
+96
+2.95
+Abu: What's 12 times 10?
+120
+3.59
+Tristan: What's 12 times 6?
+72
+14.2
+Abu: What's 12 times 3?
+36
+3.29
+Tristan: What's 12 times 9?
+108
+5.86
+Abu: What's 12 times 5?
+Tristan: [(12.97, (12, 6)), (10.25, (12, 7)), (9.69, (12, 2)), (9.51, (12, 10)), (9.5, (12, 3)), (9.46, (12, 4)), (8.83, (12, 12)), (8.3, (12, 11)), (7.31, (12, 5)), (7.21, (12, 8)), (7.16, (12, 9))]
+Abu: [(7.78, (12, 9)), (7.59, (12, 8)), (7.56, (12, 6)), (7.56, (12, 2)), (7.17, (12, 10)), (7.16, (12, 12)), (6.97, (12, 7)), (6.54, (12, 11)), (6.32, (12, 4)), (5.79, (12, 3))]

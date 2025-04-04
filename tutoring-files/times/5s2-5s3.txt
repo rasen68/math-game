@@ -1,0 +1,210 @@
+5s3: What's 12 times 9?
+108
+24.88
+5s2: What's 12 times 7?
+84
+9.22
+5s3: What's 12 times 6?
+72
+12.89
+5s2: What's 12 times 2?
+24
+5.42
+5s3: What's 12 times 11?
+132
+3.46
+5s2: What's 12 times 12?
+144
+27.15
+5s3: What's 12 times 10?
+120
+5.77
+5s2: What's 12 times 3?
+36
+7.84
+5s3: What's 12 times 8?
+84
+96
+38.7
+5s2: What's 12 times 4?
+48
+5.47
+5s3: What's 12 times 5?
+65
+60
+32.24
+5s2: What's 12 times 12?
+144
+58.13
+5s3: What's 12 times 9?
+92
+108
+20.21
+5s2: What's 12 times 8?
+96
+8.93
+5s3: What's 12 times 9?
+108
+4.35
+5s2: What's 12 times 5?
+60
+4.71
+5s3: What's 12 times 12?
+144
+3.1
+5s2: What's 12 times 5?
+60
+4.09
+5s3: What's 12 times 8?
+96
+24.09
+5s2: What's 12 times 9?
+112
+108
+18.95
+5s3: What's 12 times 6?
+72
+31.35
+5s2: What's 12 times 12?
+144
+3.15
+5s3: What's 12 times 5?
+60
+4.59
+5s2: What's 12 times 8?
+96+
+96
+16.2
+5s3: What's 12 times 9?
+108
+5.15
+5s2: What's 12 times 6?
+72
+19.65
+5s3: What's 12 times 12?
+144
+3.29
+5s2: What's 12 times 12?
+144
+2.29
+5s3: What's 12 times 8?
+72
+96
+18.78
+5s2: What's 12 times 9?
+108
+6.93
+5s3: What's 12 times 6?
+72
+6.79
+5s2: What's 12 times 3?
+36
+7.31
+5s3: What's 12 times 5?
+60
+9.65
+5s2: What's 12 times 8?
+96
+5.45
+5s3: What's 12 times 7?
+84
+46.95
+5s2: What's 12 times 6?
+72
+10.36
+5s3: What's 12 times 5?
+60
+6.12
+5s2: What's 12 times 9?
+108
+13.9
+5s3: What's 12 times 8?
+96
+5.66
+5s2: What's 12 times 7?
+95
+96
+86
+84
+35.73
+5s3: What's 12 times 6?
+72
+14.11
+5s2: What's 12 times 10?
+120
+5.64
+5s3: What's 12 times 5?
+60
+4.68
+5s2: What's 12 times 9?
+108
+6.76
+5s3: What's 12 times 7?
+84
+5.98
+5s2: What's 12 times 6?
+72
+5.41
+5s3: What's 12 times 8?
+96
+6.79
+5s2: What's 12 times 3?
+36
+6.1
+5s3: What's 12 times 3?
+36
+11.8
+5s2: What's 12 times 7?
+84
+7.22
+5s3: What's 12 times 6?
+72
+5.17
+5s2: What's 12 times 9?
+108
+18.38
+5s3: What's 12 times 8?
+96
+4.52
+5s2: What's 12 times 6?
+72
+8.57
+5s3: What's 12 times 7?
+84
+6.47
+5s2: What's 12 times 3?
+36
+3.71
+5s3: What's 12 times 9?
+108
+6.29
+5s2: What's 12 times 8?
+108
+96
+18.89
+5s3: What's 12 times 4?
+42
+48
+24.09
+5s2: What's 12 times 7?
+82
+84
+13.68
+5s3: What's 12 times 3?
+36
+3.63
+5s2: What's 12 times 9?
+108
+17.96
+5s3: What's 12 times 2?
+24
+3.17
+5s2: What's 12 times 8?
+96
+5.33
+5s3: What's 12 times 4?
+48
+13.26
+5s2: What's 12 times 7?
+5s3: [(15.13, (12, 4)), (8.98, (12, 7)), (8.77, (12, 10)), (8.03, (12, 6)), (8.02, (12, 9)), (7.43, (12, 5)), (7.09, (12, 8)), (7.03, (12, 3)), (6.9, (12, 12)), (5.25, (12, 2)), (4.46, (12, 11))]
+5s2: [(17.12, (12, 9)), (8.79, (12, 8)), (8.66, (12, 6)), (8.47, (12, 4)), (8.46, (12, 11)), (8.42, (12, 2)), (8.36, (12, 5)), (8.01, (12, 10)), (5.89, (12, 12)), (5.4, (12, 3))]

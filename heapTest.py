@@ -30,11 +30,11 @@ class HeapTest(unittest.TestCase):
     def test_heapify(self):
         start = time.time()
 
-        for i in range(self.trials):
+        for j in range(self.trials):
             unsorted = []
-            priorities = [random.random() * 10 for i in range(self.heapSize)]
-            for j in range(self.heapSize):
-                unsorted.append(Node(priorities[j], (0, 0)))
+            priorities = [random.random() * 10 for i in range(self.heapSize*10)]
+            for k in range(self.heapSize*10):
+                unsorted.append(Node(priorities[k], (0, 0)))
             heap = MaxHeap(unsorted)
 
             self.assertHeap(heap)
@@ -52,8 +52,9 @@ class HeapTest(unittest.TestCase):
             heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
+
             # this particular program will never need an empty heap
-            for i in range(self.heapSize - 1):
+            for j in range(self.heapSize - 1):
                 s = heap.extractMax()
                 self.assertHeap(heap)
                 self.assertEqual(currentSize - 1, heap.size)
@@ -73,7 +74,7 @@ class HeapTest(unittest.TestCase):
             heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
-            for i in range(self.heapSize - 1):
+            for j in range(self.heapSize - 1):
                 s = heap.extractSecondMax()
                 self.assertHeap(heap)
                 self.assertEqual(currentSize - 1, heap.size)
@@ -93,7 +94,7 @@ class HeapTest(unittest.TestCase):
             heap = MaxHeap(unsorted)
             
             currentSize = self.heapSize
-            for i in range(self.heapSize - 2):
+            for j in range(self.heapSize - 2):
                 s = heap.extractThirdMax()
                 self.assertHeap(heap)
                 self.assertEqual(currentSize - 1, heap.size)
@@ -101,6 +102,63 @@ class HeapTest(unittest.TestCase):
                 currentSize -= 1
 
         print("\nextractThirdMax:", time.time() - start)
+    
+    def test_extract(self):
+        start = time.time()
+
+        for i in range(self.trials):
+            unsorted = []
+            priorities = [random.random() * 10 for i in range(self.heapSize)]
+            for j in range(self.heapSize):
+                unsorted.append(Node(priorities[j], (0, 0)))
+            heap = MaxHeap(unsorted)
+            
+            currentSize = self.heapSize
+            for j in range(self.heapSize - 2):
+                heap.extract()
+                self.assertHeap(heap)
+                self.assertEqual(currentSize - 1, heap.size)
+                currentSize -= 1
+
+        print("\nextract:", time.time() - start)
+
+    def test_insert(self):
+        start = time.time()
+
+        for i in range(self.trials):
+            unsorted = []
+            priorities = [random.random() * 10 for i in range(self.heapSize)]
+            for j in range(self.heapSize):
+                unsorted.append(Node(priorities[j], (0, 0)))
+            heap = MaxHeap(unsorted)
+            
+            currentSize = self.heapSize
+            for j in range(self.heapSize - 2):
+                heap.insert((Node(random.random() * 10, (0, 0))))
+                self.assertHeap(heap)
+                self.assertEqual(currentSize + 1, heap.size)
+                currentSize += 1
+
+        print("\ninsert:", time.time() - start)
+
+    def test_extract_insert(self):
+        start = time.time()
+
+        for i in range(self.trials):
+            unsorted = []
+            priorities = [random.random() * 10 for i in range(self.heapSize)]
+            for j in range(self.heapSize):
+                unsorted.append(Node(priorities[j], (0, 0)))
+            heap = MaxHeap(unsorted)
+            
+            for i in range(self.heapSize - 2):
+                heap.extract()
+                self.assertHeap(heap)
+                heap.insert((Node(random.random() * 10, (0, 0))))
+                self.assertHeap(heap)
+                self.assertEqual(self.heapSize, heap.size)
+
+        print("\ninsert:", time.time() - start)
 
     def test_update(self):
         start = time.time()

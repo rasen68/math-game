@@ -1,0 +1,261 @@
+Hanene: What's 7 times 10?
+70
+19.33
+Jennalise: What's 7 times 4?
+28
+7.89
+Hanene: What's 7 times 9?
+63
+5.8
+Jennalise: What's 7 times 12?
+84
+37.89
+Hanene: What's 7 times 6?
+42
+13.8
+Jennalise: What's 7 times 3?
+21
+12.85
+Hanene: What's 7 times 11?
+77
+4.42
+Jennalise: What's 7 times 8?
+72
+63
+56
+44.42
+Hanene: What's 7 times 5?
+35
+6.83
+Jennalise: What's 7 times 7?
+49
+3.14
+Hanene: What's 7 times 2?
+14
+3.67
+Jennalise: What's 7 times 8?
+56
+28.52
+Hanene: What's 7 times 12?
+84
+7.58
+Jennalise: What's 7 times 10?
+70
+6.72
+Hanene: What's 7 times 6?
+42
+6.93
+Jennalise: What's 7 times 8?
+56
+6.24
+Hanene: What's 7 times 12?
+84
+5.95
+Jennalise: What's 7 times 3?
+21
+3.19
+Hanene: What's 7 times 10?
+70
+3.45
+Jennalise: What's 7 times 8?
+56
+2.85
+Hanene: What's 7 times 12?
+84
+3.88
+Jennalise: What's 7 times 6?
+42
+3.11
+Hanene: What's 7 times 3?
+21
+3.54
+Jennalise: What's 7 times 10?
+70
+4.33
+Hanene: What's 7 times 8?
+56
+3.57
+Jennalise: What's 7 times 12?
+84
+34.53
+Hanene: What's 7 times 6?
+42
+7.04
+Jennalise: What's 7 times 4?
+28
+3.46
+Hanene: What's 7 times 8?
+56
+2.97
+Jennalise: What's 7 times 12?
+84
+4.88
+Hanene: What's 7 times 10?
+70
+4.05
+Jennalise: What's 7 times 3?
+21
+2.66
+Hanene: What's 7 times 4?
+Hanene: [(8.64, (7, 3)), (8.1, (7, 6)), (7.71, (7, 8)), (6.83, (7, 5)), (6.8, (7, 9)), (5.99, (7, 12)), (5.95, (7, 10)), (5.14, (7, 7)), (4.67, (7, 2)), (4.42, (7, 11))]
+Jennalise: [(13.25, (7, 12)), (7.73, (7, 8)), (7.52, (7, 10)), (6.83, (7, 5)), (6.67, (7, 6)), (6.27, (7, 4)), (5.8, (7, 9)), (5.67, (7, 2)), (4.42, (7, 11)), (4.24, (7, 3)), (4.14, (7, 7))]
+Hanene: What's 8 times 5?
+40
+8.24
+Jennalise: What's 8 times 8?
+64
+4.17
+Hanene: What's 8 times 9?
+72
+10.14
+Jennalise: What's 8 times 10?
+80
+4.88
+Hanene: What's 8 times 4?
+32
+4.13
+Jennalise: What's 8 times 2?
+16
+4.25
+Hanene: What's 8 times 6?
+24
+48
+19.24
+Jennalise: What's 8 times 12?
+108
+72
+84
+96
+33.65
+Hanene: What's 8 times 3?
+24
+6.91
+Jennalise: What's 8 times 11?
+88
+3.1
+Hanene: What's 8 times 7?
+56
+3.59
+Jennalise: What's 8 times 12?
+96
+2.86
+Hanene: What's 8 times 6?
+48
+17.19
+Jennalise: What's 8 times 9?
+72
+39.69
+Hanene: What's 8 times 5?
+40
+6.98
+Jennalise: What's 8 times 12?
+96
+4.44
+Hanene: What's 8 times 6?
+48
+6.14
+Jennalise: What's 8 times 9?
+84
+84
+83
+88
+72
+93.12
+Hanene: What's 8 times 3?
+24
+6.42
+Jennalise: What's 8 times 5?
+65
+40
+25.97
+Hanene: What's 8 times 12?
+96
+8.88
+Jennalise: What's 8 times 9?
+72
+6.96
+Hanene: What's 8 times 6?
+48
+7.91
+Jennalise: What's 8 times 5?
+40
+25.47
+Hanene: What's 8 times 12?
+96
+4.1
+Jennalise: What's 8 times 9?
+72
+5.59
+Hanene: What's 8 times 6?
+48
+4.01
+Jennalise: What's 8 times 5?
+40
+11.49
+Hanene: What's 8 times 12?
+96
+4.2
+Jennalise: What's 8 times 9?
+72
+4.4
+Hanene: What's 8 times 3?
+24
+5.83
+Jennalise: What's 8 times 6?
+48
+20.35
+Hanene: What's 8 times 5?
+40
+4.84
+Jennalise: What's 8 times 12?
+96
+27.79
+Hanene: What's 8 times 9?
+72
+3.93
+Jennalise: What's 8 times 6?
+48
+9.76
+Hanene: What's 8 times 10?
+80
+4.29
+Jennalise: What's 8 times 12?
+96
+18.54
+Hanene: What's 8 times 3?
+24
+3.76
+Jennalise: What's 8 times 5?
+40
+3.77
+Hanene: What's 8 times 9?
+72
+2.55
+Jennalise: What's 8 times 12?
+96
+2.76
+Hanene: What's 8 times 7?
+56
+2.48
+Jennalise: What's 8 times 6?
+48
+3.69
+Hanene: What's 8 times 11?
+88
+2.51
+Jennalise: What's 8 times 12?
+96
+2.83
+Hanene: What's 8 times 4?
+32
+3.69
+Jennalise: What's 8 times 5?
+60
+40
+6.61
+Hanene: What's 8 times 6?
+48
+3.93
+Jennalise: What's 8 times 2?
+Hanene: [(6.17, (8, 8)), (6.03, (8, 5)), (5.95, (8, 12)), (5.49, (8, 10)), (5.03, (8, 9)), (4.79, (8, 3)), (4.5, (8, 4)), (4.47, (8, 6)), (4.25, (8, 2)), (3.71, (8, 11)), (3.52, (8, 7))]
+Jennalise: [(7.13, (8, 4)), (7.09, (8, 5)), (6.91, (8, 3)), (6.88, (8, 10)), (6.85, (8, 6)), (6.59, (8, 7)), (5.8, (8, 9)), (5.1, (8, 11)), (4.7, (8, 12)), (4.17, (8, 8))]

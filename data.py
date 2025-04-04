@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 operation = input("Operation? ")
-directory = os.path.join(os.getcwd(), "tutoring-files", operation)
+directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tutoring-files", operation)
 times = {}
 plt.rcParams.update({'font.size': 8})
 
@@ -46,8 +46,8 @@ for filename in os.listdir(directory):
             
             j -= 1 # j is now the index of the line just before the next question
             time = float(lines[j]) # i.e. the time of this question
-            if time > 30:
-               time = 30
+            if time > 20:
+               time = 20
 
             if num1 not in tables:
                 tables.append(num1)
@@ -59,21 +59,20 @@ for filename in os.listdir(directory):
         i += 1
 
 print()
-
 for thing in times:
     times[thing] = round(np.mean(times[thing]), 2)
 
-heatmap = np.zeros((11, 11))
-
 offset = 2 if operation == "times" else 1
+heatmap = np.zeros((9 + offset, 9 + offset))
+
 for thing in times:
     heatmap[thing[0] - offset][thing[1] - offset] = times[thing]
     if operation == "plus":
         heatmap[thing[1] - offset][thing[0] - offset] = times[thing]
 
 # From: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
-nums1 = [str(i+offset) for i in range(11)]
-nums2 = [str(i+offset) for i in range(11)]
+nums1 = [str(i+offset) for i in range(9 + offset)]
+nums2 = [str(i+offset) for i in range(9 + offset)]
 
 fig, ax = plt.subplots()
 im = ax.imshow(heatmap, cmap="OrRd")

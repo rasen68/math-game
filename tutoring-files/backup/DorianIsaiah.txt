@@ -1,0 +1,107 @@
+Dorian: What's 7 times 9?
+63
+13.0
+Isaiah: What's 7 times 10?
+70
+3.21
+Dorian: What's 7 times 8?
+55
+56
+47.67
+Isaiah: What's 7 times 3?
+21
+9.99
+Dorian: What's 7 times 5?
+35
+18.22
+Isaiah: What's 7 times 11?
+77
+3.57
+Dorian: What's 7 times 2?
+14
+15.5
+Isaiah: What's 7 times 7?
+42
+46
+49
+36.43
+Dorian: What's 7 times 4?
+28
+13.05
+Isaiah: What's 7 times 12?
+72
+84
+19.28
+Dorian: What's 7 times 6?
+45
+42
+61.41
+Isaiah: What's 7 times 8?
+56
+5.86
+Dorian: What's 7 times 7?
+49
+8.82
+Isaiah: What's 7 times 8?
+56
+5.97
+Dorian: What's 7 times 6?
+42
+8.88
+Isaiah: What's 7 times 12?
+84-
+84
+7.74
+Dorian: What's 7 times 7?
+42
+49
+30.63
+Isaiah: What's 7 times 6?
+42
+3.68
+Dorian: What's 7 times 8?
+56
+12.0
+Isaiah: What's 7 times 2?
+14
+15.52
+Dorian: What's 7 times 7?
+56
+49
+10.51
+Isaiah: What's 7 times 7?
+49
+6.24
+Dorian: What's 7 times 6?
+42
+7.36
+Isaiah: What's 7 times 6?
+42
+4.84
+Dorian: What's 7 times 8?
+46
+56
+15.26
+Isaiah: What's 7 times 5?
+35
+4.12
+Dorian: What's 7 times 12?
+84
+5.1
+Isaiah: What's 7 times 9?
+63
+9.01
+Dorian: What's 7 times 8?
+56
+7.66
+Isaiah: What's 7 times 2?
+14
+2.79
+Dorian: What's 7 times 5?
+42
+49
+35
+37.45
+Isaiah: What's 7 times 12?
+Dorian: [(30, (7, 5)), (16.5, (7, 2)), (16.26, (7, 7)), (14.05, (7, 4)), (14.0, (7, 9)), (13.7, (7, 6)), (11.99, (7, 3)), (11.26, (7, 8)), (9.83, (7, 12)), (4.57, (7, 11)), (4.21, (7, 10))]
+Isaiah: [(16.3, (7, 7)), (13.05, (7, 4)), (11.53, (7, 6)), (10.99, (7, 3)), (10.67, (7, 9)), (10.58, (7, 8)), (10.15, (7, 5)), (8.37, (7, 2)), (5.57, (7, 11)), (3.21, (7, 10))]

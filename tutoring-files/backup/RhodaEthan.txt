@@ -1,0 +1,406 @@
+Rhoda: What's 4 times 3?
+12
+10.65
+Ethan: What's 4 times 9?
+24
+36
+22.17
+Rhoda: What's 4 times 12?
+48
+20.63
+Ethan: What's 4 times 6?
+26
+24
+21.02
+Rhoda: What's 4 times 4?
+16
+5.4
+Ethan: What's 4 times 8?
+32
+8.55
+Rhoda: What's 4 times 10?
+40
+5.9
+Ethan: What's 4 times 11?
+44
+4.61
+Rhoda: What's 4 times 7?
+28
+12.19
+Ethan: What's 4 times 5?
+20
+4.39
+Rhoda: What's 4 times 2?
+8
+2.88
+Ethan: What's 4 times 9?
+36
+11.17
+Rhoda: What's 4 times 6?
+24
+6.43
+Ethan: What's 4 times 12?
+36
+42
+44
+48
+39.17
+Rhoda: What's 4 times 9?
+36
+16.27
+Ethan: What's 4 times 6?
+24
+4.67
+Rhoda: What's 4 times 12?
+48
+6.8
+Ethan: What's 4 times 9?
+26
+36
+15.97
+Rhoda: What's 4 times 7?
+28
+7.44
+Ethan: What's 4 times 12?
+48
+9.01
+Rhoda: What's 4 times 9?
+28
+36
+26.62
+Ethan: What's 4 times 7?
+24
+28
+10.69
+Rhoda: What's 4 times 3?
+12
+2.76
+Ethan: What's 4 times 12?
+36
+48
+14.19
+Rhoda: What's 4 times 9?
+36
+14.27
+Ethan: What's 4 times 7?
+24
+36
+38
+28
+48.31
+Rhoda: What's 4 times 12?
+48
+29.74
+Ethan: What's 4 times 9?
+36
+25.93
+Rhoda: What's 4 times 6?
+24
+9.76
+Ethan: What's 4 times 7?
+48
+36
+28
+40.41
+Rhoda: What's 4 times 12?
+38
+28
+48
+44.53
+Ethan: What's 4 times 9?
+36
+5.56
+Rhoda: What's 4 times 8?
+32
+17.83
+Ethan: What's 4 times 7?
+36
+28
+17.96
+Rhoda: What's 4 times 12?
+48
+3.24
+Ethan: What's 4 times 9?
+36
+9.49
+Rhoda: What's 4 times 8?
+32
+8.9
+Ethan: What's 4 times 7?
+28
+8.65
+Rhoda: What's 4 times 9?
+36
+17.22
+Ethan: What's 4 times 12?
+48
+4.82
+Rhoda: What's 4 times 8?
+32
+9.73
+Ethan: What's 4 times 7?
+28
+7.56
+Rhoda: What's 4 times 9?
+32
+36
+86.44
+Ethan: What's 4 times 4?
+16
+3.51
+Rhoda: What's 4 times 12?
+48
+7.34
+Ethan: What's 4 times 9?
+36
+9.18
+Rhoda: What's 4 times 8?
+38
+32
+35.42
+Ethan: What's 4 times 3?
+12
+8.11
+Rhoda: What's 4 times 9?
+38
+36
+25.44
+Ethan: What's 4 times 8?
+36
+28
+32
+147.96
+Rhoda: What's 4 times 7?
+28
+8.64
+Ethan: What's 4 times 11?
+44
+4.1
+Rhoda: What's 4 times 8?
+28
+32
+24.85
+Ethan: What's 4 times 3?
+12
+3.91
+Rhoda: What's 4 times 9?
+36
+8.15
+Ethan: What's 4 times 8?
+32
+6.96
+Rhoda: What's 4 times 11?
+44
+3.71
+Ethan: What's 4 times 6?
+24
+6.23
+Rhoda: What's 4 times 8?
+32
+6.79
+Ethan: What's 4 times 7?
+24
+28
+27.73
+Rhoda: What's 4 times 9?
+36
+6.13
+Ethan: What's 4 times 8?
+28
+32
+9.99
+Rhoda: What's 4 times 6?
+24
+5.81
+Ethan: What's 4 times 7?
+32
+28
+15.22
+Rhoda: What's 4 times 8?
+32
+5.95
+Ethan: What's 4 times 12?
+48
+4.44
+Rhoda: What's 4 times 6?
+24
+11.85
+Ethan: What's 4 times 7?
+36
+32
+28
+19.49
+Rhoda: What's 4 times 8?
+32
+10.8
+Ethan: What's 4 times 2?
+8
+3.14
+Rhoda: What's 4 times 6?
+24
+5.87
+Ethan: What's 4 times 7?
+32
+28
+14.36
+Rhoda: What's 4 times 2?
+8
+2.58
+Ethan: What's 4 times 8?
+32
+8.72
+Rhoda: What's 4 times 5?
+20
+5.09
+Ethan: What's 4 times 7?
+28
+5.12
+Rhoda: What's 4 times 8?
+32
+8.67
+Ethan: What's 4 times 5?
+20
+5.33
+Rhoda: What's 4 times 11?
+44
+2.16
+Ethan: What's 4 times 4?
+16
+3.36
+Rhoda: What's 4 times 7?
+28
+4.75
+Ethan: What's 4 times 11?
+44
+2.19
+Rhoda: What's 4 times 4?
+16
+5.98
+Ethan: What's 4 times 8?
+28
+32
+17.22
+Rhoda: What's 4 times 9?
+36
+7.0
+Ethan: What's 4 times 3?
+12
+5.68
+Rhoda: What's 4 times 12?
+48
+38.38
+Ethan: What's 4 times 8?
+28
+32
+16.57
+Rhoda: What's 4 times 3?
+12
+3.03
+Ethan: What's 4 times 5?
+20
+3.19
+Rhoda: What's 4 times 12?
+48
+4.21
+Ethan: What's 4 times 8?
+32
+6.62
+Rhoda: What's 4 times 2?
+8
+2.24
+Ethan: What's 4 times 7?
+28
+4.89
+Rhoda: What's 4 times 12?
+48
+3.47
+Ethan: What's 4 times 2?
+8
+2.33
+Rhoda: What's 4 times 7?
+28
+3.86
+Ethan: What's 4 times 8?
+32
+6.61
+Rhoda: What's 4 times 10?
+40
+2.58
+Ethan: What's 4 times 6?
+28
+24
+18.47
+Rhoda: What's 4 times 8?
+32
+36.98
+Ethan: What's 4 times 10?
+40
+3.17
+Rhoda: What's 4 times 6?
+24
+8.57
+Ethan: What's 4 times 7?
+28
+5.07
+Rhoda: What's 4 times 8?
+32
+10.48
+Ethan: What's 4 times 6?
+32
+24
+13.86
+Rhoda: What's 4 times 11?
+44
+2.56
+Ethan: What's 4 times 9?
+36
+12.38
+Rhoda: What's 4 times 8?
+32
+8.29
+Ethan: What's 4 times 6?
+28
+24
+19.5
+Rhoda: What's 4 times 9?
+36
+5.96
+Ethan: What's 4 times 2?
+8
+2.32
+Rhoda: What's 4 times 8?
+32
+8.59
+Ethan: What's 4 times 6?
+24
+5.98
+Rhoda: What's 4 times 3?
+12
+2.52
+Ethan: What's 4 times 9?
+36
+4.89
+Rhoda: What's 4 times 2?
+8
+2.21
+Ethan: What's 4 times 3?
+12
+3.22
+Rhoda: What's 4 times 8?
+32
+9.33
+Ethan: What's 4 times 4?
+16
+3.87
+Rhoda: What's 4 times 12?
+28
+48
+62.84
+Ethan: What's 4 times 6?
+32
+28
+24
+17.26
+Rhoda: What's 4 times 9?
+Rhoda: [(30, (4, 12)), (9.34, (4, 8)), (9.02, (4, 10)), (8.97, (4, 6)), (8.78, (4, 11)), (8.45, (4, 4)), (8.19, (4, 5)), (8.16, (4, 7)), (6.8, (4, 3)), (6.79, (4, 2))]
+Ethan: [(14.81, (4, 6)), (9.88, (4, 11)), (9.78, (4, 12)), (9.58, (4, 5)), (9.42, (4, 10)), (8.99, (4, 8)), (8.66, (4, 7)), (7.93, (4, 2)), (7.55, (4, 3)), (7.21, (4, 9)), (6.9, (4, 4))]

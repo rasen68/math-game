@@ -1,0 +1,147 @@
+4s1: What's 5 times 7?
+35
+159.38
+4s2: What's 5 times 2?
+15
+10
+21.19
+4s1: What's 5 times 6?
+30
+5.48
+4s2: What's 5 times 10?
+500
+50
+15.29
+4s1: What's 5 times 5?
+25
+6.04
+4s2: What's 5 times 3?
+15
+3.88
+4s1: What's 5 times 12?
+603
+60
+63.64
+4s2: What's 5 times 8?
+45
+35
+40
+61.95
+4s1: What's 5 times 9?
+45
+13.44
+4s2: What's 5 times 11?
+55
+16.15
+4s1: What's 5 times 4?
+20
+11.75
+4s2: What's 5 times 7?
+45
+35
+24.12
+4s1: What's 5 times 12?
+60
+7.88
+4s2: What's 5 times 8?
+40
+32.72
+4s1: What's 5 times 2?
+10
+6.48
+4s2: What's 5 times 7?
+35
+28.67
+4s1: What's 5 times 12?
+60
+11.74
+4s2: What's 5 times 8?
+40
+9.83
+4s1: What's 5 times 11?
+55
+13.33
+4s2: What's 5 times 7?
+35
+10.69
+4s1: What's 5 times 12?
+60
+9.11
+4s2: What's 5 times 2?
+10
+6.17
+4s1: What's 5 times 8?
+40
+11.85
+4s2: What's 5 times 7?
+35
+7.88
+4s1: What's 5 times 10?
+50
+8.2
+4s2: What's 5 times 12?
+60
+4.58
+4s1: What's 5 times 8?
+40
+14.5
+4s2: What's 5 times 11?
+55
+4.14
+4s1: What's 5 times 7?
+35
+10.23
+4s2: What's 5 times 12?
+60
+4.13
+4s1: What's 5 times 8?
+40
+11.89
+4s2: What's 5 times 10?
+50
+3.61
+4s1: What's 5 times 7?
+35
+2.82
+4s2: What's 5 times 9?
+45
+39.05
+4s1: What's 5 times 11?
+55
+14.05
+4s2: What's 5 times 8?
+39
+40
+92.78
+4s1: What's 5 times 12?
+55
+60
+11.92
+4s2: What's 5 times 9?
+45
+27.14
+4s1: What's 5 times 11?
+55
+8.52
+4s2: What's 5 times 8?
+45
+40
+82.42
+4s1: What's 5 times 4?
+20
+6.1
+4s2: What's 5 times 9?
+45
+18.98
+4s1: What's 5 times 2?
+10
+3.96
+4s2: What's 5 times 8?
+40
+21.8
+4s1: What's 5 times 12?
+60
+5.94
+4s2: What's 5 times 9?
+4s1: [(15.36, (5, 8)), (14.44, (5, 9)), (11.88, (5, 7)), (11.56, (5, 10)), (10.54, (5, 11)), (8.65, (5, 4)), (8.05, (5, 12)), (7.1, (5, 2)), (7.04, (5, 5)), (6.88, (5, 3)), (6.48, (5, 6))]
+4s2: [(24.53, (5, 8)), (12.75, (5, 4)), (11.86, (5, 7)), (11.84, (5, 12)), (11.17, (5, 2)), (9.48, (5, 6)), (9.15, (5, 11)), (8.84, (5, 10)), (8.04, (5, 5)), (7.88, (5, 3))]

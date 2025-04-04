@@ -1,0 +1,95 @@
+Skylar: What's 9 times 7?
+61
+63
+47.61
+Hanene: What's 9 times 9?
+81
+11.22
+Skylar: What's 9 times 10?
+90
+8.78
+Hanene: What's 9 times 3?
+27
+10.01
+Skylar: What's 9 times 2?
+18
+2.77
+Hanene: What's 9 times 5?
+45
+3.12
+Skylar: What's 9 times 12?
+110
+122
+132
+120
+10i
+108
+143.89
+Hanene: What's 9 times 11?
+99
+4.56
+Skylar: What's 9 times 4?
+36
+8.37
+Hanene: What's 9 times 8?
+72
+3.22
+Skylar: What's 9 times 6?
+48
+54
+28.62
+Hanene: What's 9 times 12?
+108
+7.76
+Skylar: What's 9 times 7?
+61
+63
+39.35
+Hanene: What's 9 times 10?
+90
+2.93
+Skylar: What's 9 times 12?
+108
+3.81
+Hanene: What's 9 times 7?
+63
+2.69
+Skylar: What's 9 times 10?
+90
+2.91
+Hanene: What's 9 times 12?
+108
+2.31
+Skylar: What's 9 times 7?
+51
+63
+10.41
+Hanene: What's 9 times 6?
+54
+3.56
+Skylar: What's 9 times 12?
+108
+2.62
+Hanene: What's 9 times 7?
+63
+2.41
+Skylar: What's 9 times 6?
+51
+54
+16.64
+Hanene: What's 9 times 9?
+81
+3.16
+Skylar: What's 9 times 7?
+54
+63
+7.53
+Hanene: What's 9 times 6?
+54
+3.26
+Skylar: What's 9 times 9?
+81
+3.72
+Hanene: What's 9 times 12?
+Skylar: [20.633558988571167, 12.169482125176325, 10.865782181421917, 10.009405136108398, 11.744073867797852, 3.1245810985565186, 2.7651913166046143, 4.5604088306427, 8.36702823638916, 3.2228283882141113, 9.221583048502605]
+Hanene: [11.543032169342041, 10.879489660263062, 7.643378284242419, 8.845652739206951, 10.009405136108398, 3.1245810985565186, 2.7651913166046143, 4.5604088306427, 8.36702823638916, 3.2228283882141113, 8.994082106484306]
