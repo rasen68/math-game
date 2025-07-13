@@ -123,7 +123,6 @@ class HeapTest(unittest.TestCase):
             
             currentSize = self.heapSize
             for j in range(self.heapSize - 2):
-                print(heap)
                 m = heap.extract()
                 self.assertHeap(heap)
                 self.assertEqual(currentSize - 1, heap.size)

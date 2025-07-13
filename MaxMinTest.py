@@ -26,14 +26,14 @@ class MaxMinTest(unittest.TestCase):
             r = rightChild(i)
             if level(i) % 2 == 0:
                 if l in heap:
-                    self.assertLess(self[l], self[i])
+                    self.assertLess(heap[l], heap[i])
                 if r in heap:
-                    self.assertLess(self[r], self[i])
+                    self.assertLess(heap[r], heap[i])
             else:
                 if l in heap:
-                    self.assertGreater(self[l], self[i])
+                    self.assertGreater(heap[l], heap[i])
                 if r in heap:
-                    self.assertGreater(self[r], self[i])
+                    self.assertGreater(heap[r], heap[i])
 
     def test_heapify(self):
         start = time.time()

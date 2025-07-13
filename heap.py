@@ -180,126 +180,192 @@ class MaxMinHeap:
         self.size = len(array)
         MaxMinHeap.last2 = last2
 
-        secondLastLayer = 2 ** (math.floor(math.log2(self.size))) - 2
-
-        # heapify by pushing down 
-        for i in range(secondLastLayer, -1, -1):
+        # heapify by pushing down
+        for i in range(self.size // 2 - 1, -1, -1):
             self.pushdown(i)
-    
+
     def __getitem__(self, index: int) -> Node:
         return self.array[index]
-    
+
     def __setitem__(self, index: int, node: Node):
         self.array[index] = node
 
     def __contains__(self, i: int) -> bool:
         return i < self.size and i >= 0
-    
+
     def __str__(self):
         return str([str(i) for i in self.array])
 
     def greater(self, x: int, y: int) -> bool:
         return self[x] > self[y]
-    
+
     def less(self, x: int, y: int) -> bool:
         return self[x] < self[y]
-    
+
     def swap(self, i: int, j: int):
         self[j], self[i] = self[i], self[j]
 
-    def grandchild(self, i: int, op: Callable) -> Tuple[int, int]:
-        possible = [rightChild(leftChild(i)), leftChild(rightChild(i)), rightChild(rightChild(i))]
-        current = leftChild(leftChild(i))
-        next = 0
-        for i in possible:
-            if i in self and op(i, current):
-                next = current
-                current = i
-            elif next != 0 and op(i, next):
-                next = i
-        return (current, next)
-    
+    def grandchildren(self, i: int) -> List[int]:
+        """Get all valid grandchildren of node i"""
+        grandchildren = []
+        l = leftChild(i)
+        r = rightChild(i)
+
+        if l in self:
+            if leftChild(l) in self:
+                grandchildren.append(leftChild(l))
+            if rightChild(l) in self:
+                grandchildren.append(rightChild(l))
+
+        if r in self:
+            if leftChild(r) in self:
+                grandchildren.append(leftChild(r))
+            if rightChild(r) in self:
+                grandchildren.append(rightChild(r))
+
+        return grandchildren
+
     def pushdown(self, i: int):
-        if level(i) % 2 == 1:
-            self.pushdownrec(i, self.greater)
-        else:
-            self.pushdownrec(i, self.less)
+        if level(i) % 2 == 0:  # max level
+            self.pushdown_rec(i, self.greater, max)
+        else:  # min level
+            self.pushdown_rec(i, self.less, min)
 
-    def pushdownrec(self, i: int, op: Callable):
-        if leftChild(i) in self:
-            if rightChild(i) not in self or op(leftChild(i), rightChild(i)):
-                c = leftChild(i)
-            else: c = rightChild(i)
+    def pushdown_rec(self, i: int, op: Callable, max_or_min: Callable):
+        candidates = [i for i in [leftChild(i), rightChild(i)] if i in self] + self.grandchildren(i)
+        if not candidates: return
 
-            if (leftChild(leftChild(i)) in self and op(g := self.grandchild(i, op)[0], c)):
-                if op(g, i):
-                    self.swap(g, i)
-                    if not op(g, parent(g)):
-                        self.swap(g, parent(g))
-                    self.pushdown(g)
-            elif op(c, i):
-                self.swap(c, i)
-    
+        # Find the largest
+        m = max_or_min(candidates, key=lambda x: self[x].priority)
+
+        if op(m, i):
+            self.swap(m, i)
+
+            # If m is a grandchild
+            if m in self.grandchildren(i):
+                # Check if we need to swap with parent
+                if parent(m) in self and op(parent(m), m):
+                    self.swap(m, parent(m))
+                self.pushdown(m)
+            # If m is a child, we might need to continue
+            elif m in [leftChild(i), rightChild(i)]:
+                self.pushdown(m)
+
     def pushup(self, i: int):
-        if i != 0:
-            if level(i) % 2 == 1:
-                if self[i] > self[parent(i)]:
-                    self.swap(i, parent(i))
-                    self.pushuprec(parent(i), self.greater)
-                else:
-                    self.pushuprec(i, self.less)
+        if i == 0: return
+        
+        if level(i) % 2 == 0:
+            if self[i] < self[parent(i)]:
+                self.swap(i, parent(i))
+                self.pushup_rec(parent(i), self.less)
             else:
-                if self[i] < self[parent(i)]:
-                    self.swap(i, parent(i))
-                    self.pushuprec(parent(i), self.less)
-                else:
-                    self.pushuprec(i, self.greater)
+                self.pushup_rec(i, self.greater)
+        else:
+            if self[i] > self[parent(i)]:
+                self.swap(i, parent(i))
+                self.pushup_rec(parent(i), self.greater)
+            else:
+                self.pushup_rec(i, self.less)
     
-    def pushuprec(self, i: int, op: Callable):
-        if g := parent(parent(i)) in self and op(i, g):
+    def pushup_rec(self, i: int, op: Callable):
+        if i == 0: return
+
+        g = parent(parent(i))
+        if g in self and op(i, g):
             self.swap(i, g)
-            self.pushuprec(i, op)
-    
+            self.pushup_rec(g, op)
+
     def insert(self, new: Node):
         MaxMinHeap.last2.pop(0)
         MaxMinHeap.last2.append(new.data)
 
-        self[self.size] = new
+        self.array.append(new)
         self.size += 1
         self.pushup(self.size - 1)
-    
+
     def remove(self, i: int) -> Node:
+        if i >= self.size:
+            raise IndexError("Index out of bounds")
+
         self.swap(i, self.size - 1)
         self.size -= 1
-        ret = self.array.pop(self.size)
+        ret = self.array.pop()
 
-        self.pushdown(i)
+        if i < self.size:
+            self.pushdown(i)
+            self.pushup(i)
 
         return ret
-    
+
     def peekMax(self) -> Node:
         if len(self.array) == 0:
-            raise LookupError
-        return self[0]
+            raise LookupError("Heap is empty")
+        return self.array[0]
+
+    def peekMin(self) -> Node:
+        if len(self.array) == 0:
+            raise LookupError("Heap is empty")
+        if len(self.array) == 1:
+            return self.array[0]
+        if len(self.array) == 2:
+            return self.array[1]
+        return min(self.array[1], self.array[2])
 
     def peekSecondMax(self) -> Node:
         if len(self.array) <= 1:
-            raise LookupError
+            raise LookupError("Not enough elements")
         if len(self.array) == 2:
-            return self[1]
-        return self.grandchild(0, self.greater)
+            return self.array[1]
+
+        # Find second largest among children and grandchildren of root
+        candidates = [1]  # Always include first child
+        if 2 in self:
+            candidates.append(2)
+
+        # Add grandchildren
+        candidates.extend(self.grandchildren(0))
+
+        # Remove the maximum to find second maximum
+        candidates.sort(key=lambda x: self[x].priority, reverse=True)
+        return self[candidates[1]] if len(candidates) > 1 else self[candidates[0]]
+
+    def extractMax(self) -> Node:
+        return self.remove(0)
+
+    def extractMin(self) -> Node:
+        if self.size <= 1:
+            return self.remove(0)
+        if self.size == 2:
+            return self.remove(1)
+
+        min_idx = 1 if self[1] < self[2] else 2
+        return self.remove(min_idx)
 
     def extract(self) -> Node:
-        if self.peekMax().data not in MaxHeap.last2:
-            return self.remove(0)
-        elif self.peekSecondMax().data not in MaxHeap.last2:
-            return self.remove(self.grandchild(0, self.greater)[0])
+        if self.peekMax().data not in MaxMinHeap.last2:
+            return self.extractMax()
+        elif self.size > 1 and self.peekSecondMax().data not in MaxMinHeap.last2:
+            # Find the index of second max and remove it
+            if self.size == 2:
+                return self.remove(1)
+
+            candidates = [1]
+            if 2 in self:
+                candidates.append(2)
+            candidates.extend(self.grandchildren(0))
+
+            candidates.sort(key=lambda x: self[x].priority, reverse=True)
+            second_max_idx = candidates[1] if len(candidates) > 1 else candidates[0]
+            return self.remove(second_max_idx)
         else:
-            (g, n) = self.grandchild(0, self.greater)
-            if self[gg := self.grandchild(g)[0]] > self[n]: 
-                return self.remove(gg)
+            # Find third max
+            candidates = [1]
+            if 2 in self:
+                candidates.append(2)
+            candidates.extend(self.grandchildren(0))
+
+            if len(candidates) >= 3:
+                candidates.sort(key=lambda x: self[x].priority, reverse=True)
+                return self.remove(candidates[2])
             else:
-                return self.remove(n)
-    
-    def extractMin(self) -> Node:
-        return self.remove(1) if self[1] > self[2] else self.remove(2)
+                return self.extractMax()  # Fallback
